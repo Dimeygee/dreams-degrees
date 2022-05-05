@@ -1,16 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, fellix;
+    scroll-behaviour:smooth;
+    --webkit-scroll-behaviour:smooth;
+}
+.header_container{
+  background-image:url(/images/lines1.png), url(/images/gradient.png) !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.img_box{
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-position:center;
+  width:100%;
 }
+
 
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
+.link{
+  font-size:16px;
+  font-weight:400;
+}
+
+.link.active{
+  font-size:16px;
+  font-weight:600;
+}
+
+
+
