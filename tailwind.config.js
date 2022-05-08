@@ -8,14 +8,18 @@ module.exports = {
       width: {
         '85': '85%',
         '100p': "100%", 
-        '50': "50%", 
+        '50p': "50%", 
         "200":"200px",
         "50": "50px",
+        "747": "747px",
       },
       height: {
         '40': "40px",
         '50': "50px",
-      }
+      },
+      colors: {
+        'pry': '#D68676',
+      },
     },
     minHeight: {
       '1/6': '110vh',
@@ -30,12 +34,13 @@ module.exports = {
       'md': '550px',
       'lg': '1024px',
       'xl': '1200px',
-      '2xl': '1536px',
-      '3xl': '2000px',
-      '4xl': '3056px',
     },
     colors:{
-      "bk": "#12022F"
+      "bk": "#12022F",
+      "bt-primary":"#D68676",
+      "para": "#594D6D",
+      "para2": "#797B89",
+      "mtext": "#2D3748"
     },
     fontFamily: {
       'sans': ['ui-sans-serif', 'system-ui',],
@@ -43,7 +48,14 @@ module.exports = {
       'mono': ['ui-monospace', 'SFMono-Regular',],
       'display': ['Oswald',],
       'body': ['"Open Sans"', "fellix"],
-    }
+    },
+    fontSize: {
+      "56":"56px",
+      "18":"18px",
+      "21":"21px",
+      "42":"42px",
+      "14":"14px"
+    },
   },
   plugins: [],
 }
