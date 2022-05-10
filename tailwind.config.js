@@ -8,6 +8,7 @@ module.exports = {
       width: {
         '85': '85%',
         '100p': "100%", 
+        '125': "125px", 
         '50p': "50%", 
         "200":"200px",
         "50": "50px",
@@ -16,6 +17,7 @@ module.exports = {
       height: {
         '40': "40px",
         '50': "50px",
+        '125': "125px", 
       },
       colors: {
         'pry': '#D68676',
@@ -53,8 +55,14 @@ module.exports = {
       "56":"56px",
       "18":"18px",
       "21":"21px",
+      "22":"22px",
+      "16":"16px",
       "42":"42px",
       "14":"14px"
+    },
+    fontFamily: {
+      'paytone': ["Paytone One"],
+      'fellix': ["fellix"],
     },
   },
   plugins: [],

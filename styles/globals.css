@@ -16,14 +16,14 @@ body {
 
 .header_container{
   background-image:url(/images/lines1.png), url(/images/gradient.png) !important;
+  position:relative;
 }
+
 
 .img_box{
   background-repeat:no-repeat;
   background-size:100% 100%;
   background-position:center;
-  width:100%;
-  min-height:100vh;
 }
 
 .mainbg, .pline{
@@ -77,6 +77,45 @@ body {
 .program_content::-webkit-scrollbar-thumb{
   background: #D68676;
 }
+
+
+.contact_form form label  input, .textarea, .contact_btn{
+  width:540px;
+}
+.contact_form form label input::placeholder,
+.contact_form form label textarea::placeholder{
+  opacity: 0.5;
+  color: #12022F;
+  letter-spacing: -0.36px;
+  font-weight: 400;
+  font-size: 16px;
+  border:none;
+  outline:none;
+}
+
+.speaker, .volunteer, .mentor, .sponsor{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.speaker{
+  background-image: url(/images/speakerbg.png);
+}
+
+.volunteer{
+  background-image:url(/images/volunteerbg.png);
+}
+
+.mentor{
+  background-image:url(/images/mentorbg.png);
+}
+.sponsor{
+  background-image:url(/images/p_sbg.png);
+}
+
+
+
 
 
 @media screen and (max-width:540px){

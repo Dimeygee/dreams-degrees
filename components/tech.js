@@ -11,9 +11,11 @@ export default function TechnologyProgram(){
             <article className="mb-[32px]">
                 <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>Technology Mentorship Program</h4>
                 <p className='text-para2 text-18 font-[400] leading-[24px]'>This is a technology mentoring program which aims to provide vibrant and ambitious young women in the information technology industry or women wanting to transition into the field of IT with adequate access to support, encouragement, and advice from experienced individuals through a virtual mentoring relationship. Mentors and mentees will be matched according to application details, interests, experience, and goals. During this time, participants will be able to communicate with each other via video calls, emails, chat and / or phone calls.</p>
-                <BButton backgroundColor="#D68676" color="white" padding="15px 61px" margin="24px 0 32px 0">
-                    <span>Apply here</span>
-                </BButton>
+                <div className="md:block hidden">
+                    <BButton backgroundColor="#D68676" color="white" padding="15px 61px" margin="24px 0 32px 0">
+                        <span>Apply here</span>
+                    </BButton>
+                </div>
             </article>
             <article className='mb-[32px]'>
                 <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>How it works</h4>
