@@ -2,6 +2,12 @@
 import Image from "next/image"
 import star from "../public/images/star.png"
 import BButton from "./BButton"
+import dynamic from "next/dynamic"
+import rightbrown from "../public/images/rightbrown.png"
+
+
+const Reviews = dynamic(() => import ("./reviews"))
+
 
 
 export default function TechnologyProgram(){
@@ -11,9 +17,14 @@ export default function TechnologyProgram(){
             <article className="mb-[32px]">
                 <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>Technology Mentorship Program</h4>
                 <p className='text-para2 text-18 font-[400] leading-[24px]'>This is a technology mentoring program which aims to provide vibrant and ambitious young women in the information technology industry or women wanting to transition into the field of IT with adequate access to support, encouragement, and advice from experienced individuals through a virtual mentoring relationship. Mentors and mentees will be matched according to application details, interests, experience, and goals. During this time, participants will be able to communicate with each other via video calls, emails, chat and / or phone calls.</p>
-                <div className="md:block hidden">
-                    <BButton backgroundColor="#D68676" color="white" padding="15px 61px" margin="24px 0 32px 0">
-                        <span>Apply here</span>
+                <div className="md:block hidden w-[230px] mt-[24px]">
+                    <BButton width="100%" backgroundColor="#D68676" padding="15px 0" color="white" fontSize="16px">
+                            <span >Apply here</span>
+                            <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
+                                        <div className="relative w-[10px] h-[10px]">
+                                            <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
+                                        </div>
+                                </div>
                     </BButton>
                 </div>
             </article>
@@ -155,6 +166,13 @@ export default function TechnologyProgram(){
                 <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Build networking opportunities.</p>
             </div>
         </article>
+        <article  className="review_slide w-[428px] md:w-[350px] xl:w-[570px]">
+                <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>Mentees Reviews</h4>
+                <section className="mt-[32px] relative">
+                    <Reviews />
+                </section>
+                
+            </article>
     </div>
     )
 

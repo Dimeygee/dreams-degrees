@@ -1,7 +1,7 @@
-import "@fontsource/paytone-one"
 import '../styles/globals.css'
 import { motion, AnimatePresence  } from "framer-motion"
 import Layout from "../components/layout"
+import ContextWrapper from "../components/context"
 
 function MyApp({ Component, pageProps, router }) {
   return (
@@ -12,9 +12,11 @@ function MyApp({ Component, pageProps, router }) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
-        <Layout>
-            <Component {...pageProps} />
-        </Layout> 
+        <ContextWrapper>
+          <Layout>
+              <Component {...pageProps} />
+          </Layout> 
+        </ContextWrapper>
       </motion.div>
   </AnimatePresence>
   

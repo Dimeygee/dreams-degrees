@@ -7,7 +7,7 @@ export default function WhoWeAre(){
 
     return (
         <section >
-            <article className="md:container mx-auto flex-col flex md:flex-row items-center mb-[124px] md:mb-0">
+            <article className="md:px-6 xl:px-0 xl:container mx-auto flex-col flex md:flex-row items-center mb-[124px] md:mb-0">
                 <div 
                 className="w-100p md:w-50p h-[363px] md:h-[622px] relative">
                     <Image src={ladiesgroup} alt="ladiesgroup" layout="fill" objectFit="contain" priority quality={90} />

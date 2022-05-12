@@ -12,28 +12,67 @@ body {
   --webkit-scroll-behaviour:smooth;
 }
 
-
-
 .header_container{
-  background-image:url(/images/lines1.png), url(/images/gradient.png) !important;
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026699/dd/headerline_f5m8gb.png"), url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026704/dd/gradient_svvzek.png") !important;
   position:relative;
 }
-
-
+.logo_bg{
+  background-image:url(/images/logo.png);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center center;
+}
 .img_box{
   background-repeat:no-repeat;
   background-size:100% 100%;
   background-position:center;
 }
 
+.owl-carousel .owl-stage-outer{
+  margin-bottom:48px;
+}
+
+.owl-dots{
+  display:flex;
+  justify-content:center;
+  padding:10px 0;
+  align-items:center;
+}
+
+.owl-carousel button.owl-dot{
+  background:#F3DCD8 !important;
+  border:1px solid black;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  margin-right:10px;
+}
+
+.owl-carousel .owl-dots.disabled{
+  display:flex !important;
+}
+
+.owl-carousel button.owl-dot.active{
+  width:26px;
+  height:26px;
+  background:#D68676 !important;
+  border: 5px solid #F3DCD8;
+}
+
 .mainbg, .pline{
-  background-image:url(/images/mainbg.png);
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026702/dd/aboutline_vgyj9u.png");
   background-repeat:no-repeat;
   background-size:100% 100%;
   background-position:center;
 }
 .pline{
-  background-image:url(/images/pline.png);
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026702/dd/aboutline_vgyj9u.png");
+}
+.about_bg, .program_bg, .contact_bg{
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026702/dd/aboutline_vgyj9u.png") !important;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-position:center;
 }
 
 .work_para{
@@ -78,6 +117,28 @@ body {
   background: #D68676;
 }
 
+.speaker, .volunteer, .mentor, .sponsor{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.speaker{
+  background-image: url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026711/dd/speaker_cnlr4u.png") !important;
+}
+
+.volunteer{
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026709/dd/volunteer_iwkyci.png");
+}
+
+.mentor{
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026699/dd/mentor_crbyrk.png");
+}
+.sponsor{
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026709/dd/patner_vo89rl.png");
+}
+
+
 
 .contact_form form label  input, .textarea, .contact_btn{
   width:540px;
@@ -93,40 +154,41 @@ body {
   outline:none;
 }
 
-.speaker, .volunteer, .mentor, .sponsor{
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.footer_input{
+  border:none;
+  outline:none;
+  background-color:transparent;
 }
 
-.speaker{
-  background-image: url(/images/speakerbg.png);
+.footer{
+  background:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026702/dd/aboutline_vgyj9u.png"), #D68676;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-position:center;
 }
-
-.volunteer{
-  background-image:url(/images/volunteerbg.png);
-}
-
-.mentor{
-  background-image:url(/images/mentorbg.png);
-}
-.sponsor{
-  background-image:url(/images/p_sbg.png);
-}
-
-
-
 
 
 @media screen and (max-width:540px){
-  .header_container{
-    background-image:url(/images/lines1.png),url(/images/gradient_sm.png) !important;
-  }
+  .contact_form form label  input, .textarea, .contact_btn{
+  width:100%;
+}
+
+  
   .program_art{
     width:100%;
     text-align:center;
     margin-top:24px;
   }
+  .img_box, .mainbg, .pline,.about_bg, .program_bg, .contact_bg, .footer{
+    background-size:cover;
+  }
+
+  .mobilenav{
+  background-image:url(/images/lines1.png), url(/images/gradient_sm.png) !important;
+  background-color:#e4c6c6;
+}
+
+  
 }
 
 

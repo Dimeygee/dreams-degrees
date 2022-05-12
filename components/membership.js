@@ -1,35 +1,24 @@
 import Image from "next/image"
 import star from "../public/images/star.png"
-import styled from "styled-components"
+import BButton from './BButton'
+import rightbrown from "../public/images/rightbrown.png"
+import rightwhite from "../public/images/rightwhite.png"
 
 
-const Button = styled.button`
-    background: ${props => props.primary ? "#D68676" : props.notprimary ? "transparent" : ""};
-    color: ${props => props.primary ? "white" 
-    : props.notprimary ? "#12022F" : "black" };
 
-    font-size: 1em;
-    padding: 15px 59px;
-    border: ${props => props.primary ? "" : 
-        props.notprimary ? "" : "2px solid #1A202C"  };
-    border-radius: 28px;
-    font-weight:600;
-    display:flex;
-    align-items:center;
-`
 
 export default function Membership(){
 
     return (
-        <section className="mt-[157px] md:mt-[107px] md:mt-28 mb-[210px]">
-            <div className="container mx-auto">
-            <h1 className='text-42 md:text-56 mb-[32px] md:mb-0 text-center font-paytone'>Membership <span className="text-pry">Benefits</span></h1>
-            <div className='md:w-[1024px] mx-auto mt-[32px] grid grid-cols-1 md:grid-cols-2 gap-7 font-fellix'>
+        <section className="mt-[157px] md:mt-[107px] md:mb-[210px]">
+            <div className="px-6 xl:px-0 xl:container mx-auto">
+            <h1 className='text-42 xl:text-56 mb-[32px] md:mb-0 text-center font-paytone'>Membership <span className="text-pry">Benefits</span></h1>
+            <div className='xl:w-[1024px] mx-auto mt-[32px] grid grid-cols-1 md:grid-cols-2 gap-7 font-fellix'>
                 <article className="flex items-center text-center md:text-left flex-col md:flex-row">
                     <span className='block w-[23px] h-[23px] relative mr-[23px]'>
                         <Image src={star} layout="fill" objectFit="contain" quality={100}/>
                     </span>
-                    <p className="text-mtext text-16 font-[600] mt-[16px] md:mt-0">Mentorship: Learn from experienced professionals in technology</p>
+                    <p className="text-mtext text-16 font-[600] mt-[16px] xl:mt-0">Mentorship: Learn from experienced professionals in technology</p>
                 </article>
                 <article className="flex items-center text-center md:text-left flex-col md:flex-row">
                     <span className='block w-[23px] h-[23px] relative mr-[23px]'>
@@ -71,12 +60,28 @@ export default function Membership(){
                 </div>
             </section>
             <section className="flex justify-center mt-[48px] md:flex-row flex-col font-fellix">
-                <Button primary className="mr-7">
-                    <span>Get Started </span>
-                </Button>
-                <Button className="mt-[39px] mb-[111px] md:mb-0 md:mt-0">
-                    <span>Get Involved</span>
-                </Button>
+                <div className="md:w-[484px]  mx-auto flex justify-between  md:flex-row flex-col">
+                    <span className="w-[230px] mb-4">
+                        <BButton width="100%" fontSize="16px" backgroundColor="#D68676" padding="15px 0" color="white">
+                            <span>Get Started</span>
+                            <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
+                                        <div className="relative w-[10px] h-[10px]">
+                                            <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
+                                        </div>
+                                </div>
+                        </BButton>
+                    </span>
+                    <span className="w-[230px]">
+                        <BButton width="100%" fontSize="16px"  backgroundColor="transparent" border="2px solid #D68676" padding="15px 0" color="#D68676">
+                            <span>Get Involved</span>
+                            <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#D68676] flex items-center justify-center'>
+                                        <div className="relative w-[15px] h-[15px]">
+                                            <Image src={rightwhite}  alt="rightwhite" layout="fill" quality={100}  />
+                                        </div>
+                                </div>
+                        </BButton>
+                    </span>
+                </div>
             </section>
             </div>
         </section>

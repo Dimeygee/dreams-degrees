@@ -76,16 +76,18 @@ export default function BusinessGrants(){
                 <div className="mt-[29px]">
                     <p className="work_para text-para2 text-18 font-[400] leading-[24px]">Keep your eye open for all the details in this section of the website, join our community by subscribing to our mailing list, or follow us on social media and we will keep you posted about dates and venues.
                     </p>
-                    <div className="mt-[32px] flex md:flex-row flex-col">
-                        <BButton backgroundColor="#D68676" padding="15px" color="white" width="40%" >
-                        <span className="text-16 font-[600]">Join Community</span>
-                        <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
-                            <div className="relative w-[10px] h-[10px]">
-                                <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
-                            </div>
-                        </div>                    
-                        </BButton>
-                        <div className="md:mt-0 md:ml-5 mt-[24px] md:grow">
+                    <div className="mt-[32px] flex xl:flex-row flex-col">
+                        <div className="md:w-[100%] xl:w-[40%] xl:mb-0 mb-3">
+                        <BButton backgroundColor="#D68676" padding="15px" color="white" width="100%" >
+                            <span className="text-16 font-[600]">Join Community</span>
+                            <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
+                                <div className="relative w-[10px] h-[10px]">
+                                    <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
+                                </div>
+                            </div>                    
+                            </BButton>
+                        </div>
+                        <div className="xl:mt-0 xl:ml-5 mt-[24px] xl:grow xl:w-0 w-100p">
                             <BButton backgroundColor="white" border="2px solid #D68676" padding="15px" color="#D68676" width="100%">
                                 <span className="text-16 font-[600]">Become a partner/sponsor</span>
                                 <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#D68676] flex items-center justify-center'>

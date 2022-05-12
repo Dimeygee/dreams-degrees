@@ -10,6 +10,8 @@ import AccountabilityProgam from "./accountability"
 import IntershipProgram from "./intership"
 import BusinessGrants from "./businessgrants"
 import EventsProgram from "./events"
+import webb from "../public/images/webb.png"
+import oval from "../public/images/oval.png"
 
 
 
@@ -73,4 +75,26 @@ export const programsArray = [
     },
     
     
+]
+
+
+export const review_utils = [
+    { 
+        image: webb,
+        name: "Theresa Webb",
+        profession:"UI Designer",
+        review : "Having a like-minded community makes me feel like I’m part of something bigger. I thought online learning was lonely and unengaging."
+    },
+    { 
+        image: oval,
+        name: "Theresa Webb",
+        profession:"UI Designer",
+        review : "According to Cesar Millan, licking behaviors stem from ingrained personality traits bred through canines as a communication."
+    },
+    { 
+        image: oval,
+        name: "Theresa Webb",
+        profession:"UI Designer",
+        review : "According to Cesar Millan, licking behaviors stem from ingrained personality traits bred through canines as a communication."
+    },
 ]

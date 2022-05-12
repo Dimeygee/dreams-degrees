@@ -42,14 +42,8 @@ module.exports = {
       "bt-primary":"#D68676",
       "para": "#594D6D",
       "para2": "#797B89",
+      "fm": "#E7E5EA",
       "mtext": "#2D3748"
-    },
-    fontFamily: {
-      'sans': ['ui-sans-serif', 'system-ui',],
-      'serif': ['ui-serif', 'Georgia',],
-      'mono': ['ui-monospace', 'SFMono-Regular',],
-      'display': ['Oswald',],
-      'body': ['"Open Sans"', "fellix"],
     },
     fontSize: {
       "56":"56px",
@@ -58,12 +52,16 @@ module.exports = {
       "22":"22px",
       "16":"16px",
       "42":"42px",
-      "14":"14px"
+      "14":"14px",
+      "48":"48px"
     },
     fontFamily: {
       'paytone': ["Paytone One"],
       'fellix': ["fellix"],
     },
+    backgroundImage: {
+        "gradient": "url('/images/gradient_sm.png')",
+    }
   },
   plugins: [],
 }

@@ -6,16 +6,16 @@ import ddbg from "../public/images/ddbg.png"
 import apt from "../public/images/apt.png"
 import swt from "../public/images/swt.png"
 import BButton from "./BButton"
-import wright from "../public/images/wright.png"
 
 
 export default function Programs(){
 
     return (
-        <section className="program_container py-[29px]">
-            <div className="container mx-auto">
-            <h1 className="md:text-56 leading-[58px] md:leading-0 text-42 md:text-56 text-center font-paytone">Our <span className="text-pry">Programs</span></h1>
-            <div className="container mx-auto mt-[87px] grid gap-x-[48px] gap-y-[72px] grid-cols-1 md:grid-cols-2 md:px-12 font-fellix">
+        <section className="program_container py-[29px] px-6 md:px-0 md:mb-0 md:mt-0 mt-[134px] mb-[158px]">
+           
+            <div className="px-6 xl:p-0 xl:container mx-auto">
+            <h1 className="md:text-56 leading-[58px] md:leading-0 text-42  text-center font-paytone">Our <span className="text-pry">Programs</span></h1>
+            <div className="xl:container mx-auto mt-[87px] grid gap-x-[48px] gap-y-[72px] grid-cols-1 md:grid-cols-2 xl:px-12 font-fellix">
                 <div className="flex flex-col md:flex-row items-center md:items-start">
                     <span className="w-[72px] h-[72px] relative">
                         <Image src={mbutton} alt="mbutton" layout="fill" quality={100} />

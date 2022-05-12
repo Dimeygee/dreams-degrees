@@ -1,32 +1,21 @@
 import Image from "next/image"
 import groupbg from "../public/images/groupbg.png"
 import rightbrown from "../public/images/rightbrown.png"
-import styled from "styled-components"
 import BButton from "./BButton"
 
 
-const Button = styled.button`
-    display:flex;
-    justify-content:center;
-    padding:15px 43px;
-    color:white;
-    align-items:center;
-    background-color:#D68676;
-    border-radius: 28px;
-
-`
 
 
 export default function Community(){
 
     return (
-        <div >
-                <div className="container mx-auto md:px-6 mt-[100px] mb-[220px] md:text-left text-center grid grid-cols-1 md:grid-cols-12">
-                    <div className="md:w-[411px] p-10  md:col-span-4 h-[490px] md:h-auto rounded-[32px] relative">
+        <div className='px-6 md:px-0'>
+                <div className="xl:container mx-auto md:px-6 mt-[100px] mb-[220px] md:text-left text-center grid grid-cols-1 md:grid-cols-12">
+                    <div className="md:w-[451px] lg:w-[400px] lg:col-span-4  xl:w-[411px] p-10 md:col-span-6  xl:col-span-4 h-[470px] md:h-auto rounded-[32px] relative">
                         <Image src={groupbg}  alt="groupbg" layout="fill"  quality={100}  />
                     </div>
-                    <div className="col-span-8 md:pl-[110px] mt-[105px] md:mt-0">
-                        <h1 className="text-42 md:text-56 leading-[59px] md:leading-[64px] md:w-[575px] font-paytone">Our <span className="text-pry">Community</span> and <span className="text-pry">membership</span> <br /> experience </h1>
+                    <div className="md:col-span-6 lg:col-span-8 xl:col-span-8 md:pl-[110px] mt-[105px] md:mt-0">
+                        <h1 className="text-42 lg:text-56 xl:text-56 leading-[59px] xl:leading-[64px] xl:w-[575px] font-paytone">Our <span className="text-pry">Community</span> and <span className="text-pry">membership</span> <br /> experience </h1>
                         <p className="mt-[24px] text-para2 leading-[24px] text-18 font-fellix" >
                         We are an authentic and value-based community that provides a virtual safe space for likeminded females to explore and do life. We need other people in our lives for optimal mental, psychological, and emotional health. No one was made to live life alone. Explore and do life together in an open but safe informal environment.
                         </p>

@@ -1,34 +1,31 @@
-import Image from "next/image"
-import logo from "../public/images/logo.png"
 import Link from "next/link"
-import styled from "styled-components"
 import { useRouter } from "next/router"
+import { MenuContext } from "./context"
+import { useContext } from "react"
+import Head from "next/head"
+import BButton from "./BButton"
 
-const Button = styled.button`
-    background: ${props => props.primary ? "#D68676" : props.notprimary ? "transparent" : "white"};
-    color: ${props => props.primary ? "white" 
-    : props.notprimary ? "#12022F" : "#D68676" };
-
-    font-size: 1em;
-    padding: 15px 24px;
-    border: ${props => props.primary ? "" : 
-        props.notprimary ? "" : "2px solid #1A202C"  };
-    border-radius: 28px;
-    font-weight:600;
-`
 
 export default function NavLayout() {
 
     const router = useRouter()
 
+    const menucontext = useContext(MenuContext) 
+
+    const {open, isOpen } = menucontext
+
+
+
     return (
-        <div className={`${router.asPath !== "/" ? "relative bg-[#ffff]" : "absolute" } w-100p z-10`}>
-            <div className='container mx-auto md:px-5 py-7 flex justify-between items-center font-fellix'>
-                <div className='w-[115px] h-[28px] md:w-[165px] md:h-40  relative'>
-                        <Image src={logo}  layout="fill" quality={100} priority />
+        <div className={`${router.asPath !== "/" ? " bg-[#ffff]" : "transparent" } absolute w-100p z-10`}>
+            <Head>
+                <link  rel="icon" href="./images/logo.png" />
+            </Head>
+           <div className='px-6  xl:container  mx-auto xl:px-5 py-7 flex justify-between items-center font-fellix'>
+                <div className='logo_bg w-[150px] h-[40px] xl:w-[175px] md:h-[50px]  xl:h-50  relative'>
                 </div>
-                <div className="text-bk grow px-20">
-                    <ul className="hidden md:flex justify-evenly px-20 ml-10">
+                <div className="text-bk xl:ml-20 hidden md:flex justify-center">
+                    <ul className="md:flex justify-between  w-[300px]">
                         <li>
                             <Link href="/">
                                 <a className={`link ${router.asPath === "/" ? "active" : "" }`}>Home</a>
@@ -51,11 +48,15 @@ export default function NavLayout() {
                         </li>
                     </ul>
                 </div>
-                <div className="hidden md:flex justify-between">
-                    <Button notprimary>Get Involved</Button>
-                    <Button primary>Get started</Button>
+                <div className="hidden md:flex justify-between items-center font-fellix w-[254px]  text-16 font-[600] ">
+                    <span  className="text-[#12022F]">
+                        <BButton>Get Involved</BButton>
+                    </span>
+                    <span>
+                        <BButton padding="15px 0" color="white" backgroundColor="#D68676" width="128px">Get started</BButton>
+                    </span>
                 </div>
-                <div className="flex md:hidden w-[24px] justify-between flex-col h-[24px]">
+                <div className="flex md:hidden w-[24px] justify-between flex-col h-[20px] " onClick={() => isOpen(!open)}>
                     <div className="w-[100%] border-2 border-pry"></div>
                     <div className="w-[100%] border-2 border-pry"></div>
                     <div className="w-[100%] border-2 border-pry"></div>
