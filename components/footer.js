@@ -35,7 +35,8 @@ export default function Footer() {
 
     return (
         <div className='footer pt-[80px] pb-[150px] md:pb-[48px] text-[#fff] font-fellix'>
-            <div className='xl:container mx-auto px-6 md:px-10 text-white flex md:items-center flex-col md:flex-row justify-between mb-[78px] md:mb-[129px]'>
+              <div>
+              <div className='xl:container mx-auto px-6 md:px-10 text-white flex md:items-center flex-col md:flex-row justify-between mb-[78px] md:mb-[129px]'>
                 <div className="xl:w-100p">
                      <small className="font-[700] text-16 ">Join the community</small>
                     <form className='footer_form mt-[32px] flex xl:flex-row flex-col'>
@@ -45,7 +46,7 @@ export default function Footer() {
                             </div>
                             <input  type="text" placeholder="Enter your  mail" required className="py-[12px] pl-2  border-0 outline-none footer_input " />
                         </FormContainer>
-                        <div className="md:ml-[30px] mt-3 xl:mt-0 font-[700]">
+                        <div className="xl:ml-[30px] mt-3 xl:mt-0 font-[700]">
                             <BButton  width="160px" fontSize="16px" backgroundColor="white" color="#D68676" padding="15px 0">join now</BButton>
                         </div>
                     </form>
@@ -92,6 +93,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+              </div>
         </div>
     )
 

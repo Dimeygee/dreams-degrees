@@ -161,11 +161,14 @@ body {
 }
 
 .footer{
-  background:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026702/dd/aboutline_vgyj9u.png"), #D68676;
+  background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652451355/dd/footerline_cqtdos.png");
   background-repeat:no-repeat;
   background-size:100% 100%;
   background-position:center;
+  z-index:4;
+  background-color:#D68676 ;
 }
+
 
 
 @media screen and (max-width:540px){
@@ -179,9 +182,15 @@ body {
     text-align:center;
     margin-top:24px;
   }
-  .img_box, .mainbg, .pline,.about_bg, .program_bg, .contact_bg, .footer{
+  .img_box, .mainbg, .pline,.about_bg, .program_bg, .contact_bg{
     background-size:cover;
   }
+
+  .footer{
+    background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652452490/dd/footerlinesm_x4yeen.png");
+  }
+
+  
 
   .mobilenav{
   background-image:url(/images/lines1.png), url(/images/gradient_sm.png) !important;

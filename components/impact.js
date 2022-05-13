@@ -14,9 +14,6 @@ export default function Impact(){
             <p  className="text-para2 text-18 xl:w-747 mx-auto text-center font-fellix">
             While most of our initiatives are geared towards supporting females in technology and female entrepreneurs, our goal at Dreams & Degrees is to provide opportunities that would enable success for all women.</p>
             <article 
-            whileInView={{ opacity: 1, y:0 }}
-            initial={{ opacity: 0, y:200 }}
-            transition={{ delay: 1}}
             className="xl:w-[820px] mt-[94px] md:mt-0 mx-auto flex justify-between flex-col md:flex-row font-fellix">
                 <div className="text-center flex flex-col justify-center items-center">
                     <div className="relative w-[137px] h-[137px] md:w-[146px] md:h-[146px]">
