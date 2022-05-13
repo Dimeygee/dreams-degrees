@@ -31,17 +31,17 @@ export default function TechnologyProgram(){
             <article className='mb-[32px]'>
                 <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>How it works</h4>
                 <div className="flex items-center mb-[16px]">
-                    <span className="bg-[#F9EEEB] text-pry text-14 font-[700] block relative w-[40px] h-[40px] rounded-full justify-center flex items-center">1</span>
+                    <span className="bg-[#F9EEEB] text-pry text-14 font-[700]  relative w-[40px] h-[40px] rounded-full justify-center flex items-center">1</span>
                     <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Register and onboard mentees whose goals and interests align with those of the program.</p>
                 
                 </div>
                 <div className="flex items-center mb-[16px]">
-                <span className="bg-[#F9EEEB] text-pry text-14 font-[700] block relative w-[40px] h-[40px] rounded-full justify-center flex items-center">2</span>
+                <span className="bg-[#F9EEEB] text-pry text-14 font-[700]  relative w-[40px] h-[40px] rounded-full justify-center flex items-center">2</span>
                 <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Mentees are given access to D&D skill up, a structure that includes 3 months of technical training, workshops and 3 months of business workshops, financial management literacy, soft skills & build season [ where mentees work on projects that reflect their current skill upgrade]</p>
             
                 </div>
                 <div className="flex items-center mb-[16px]">
-                <span className="bg-[#F9EEEB] text-pry text-14 font-[700] block relative w-[40px] h-[40px] rounded-full justify-center flex items-center">3</span>
+                <span className="bg-[#F9EEEB] text-pry text-14 font-[700]  relative w-[40px] h-[40px] rounded-full justify-center flex items-center">3</span>
                 <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Personalized check-in sessions with Mentors.</p>
             
             </div>         
