@@ -14,15 +14,15 @@ export default function Impact(){
             <p  className="text-para2 text-18 xl:w-747 mx-auto text-center font-fellix">
             While most of our initiatives are geared towards supporting females in technology and female entrepreneurs, our goal at Dreams & Degrees is to provide opportunities that would enable success for all women.</p>
             <article 
-            className="xl:w-[820px] mt-[94px] md:mt-0 mx-auto flex justify-between flex-col md:flex-row font-fellix">
-                <div className="text-center flex flex-col justify-center items-center">
+            className="md:container md:mx-auto xl:w-[820px] mt-[94px] md:mt-0  flex justify-between flex-col md:flex-row font-fellix">
+                <div className="md:w-[45%]  text-center flex flex-col justify-center items-center">
                     <div className="relative w-[137px] h-[137px] md:w-[146px] md:h-[146px]">
                         <Image src={tech} alt="tech" layout="fill" quality={90} />
                     </div>  
                     <b className="my-4 block text-21 ">Technology</b> 
                     <p className="xl:w-[413px] text-para2 text-18">Bridge the gender and skill gap in technology through group and/or 1:1 mentoring, Accountability buddy initiative and internship opportunities.</p> 
                 </div>    
-                <div className="text-center flex flex-col justify-center items-center mt-20">
+                <div className="md:w-[45%] text-center flex flex-col justify-center items-center md:mt-24 mt-20">
                     <div className="relative w-[137px] h-[137px] md:w-[146px] md:h-[146px]">
                         <Image src={ent} alt="ent" layout="fill" quality={90} />
                     </div>  
