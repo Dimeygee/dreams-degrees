@@ -11,10 +11,7 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 });
 
 
-
 export default function Reviews(){
-
-
 
 
 
@@ -24,7 +21,7 @@ export default function Reviews(){
              <OwlCarousel autoWidth={true}>
              { review_utils.map((review, index) => {
                         return(
-                            <div className="border-[#E8E9ED] border-[1.5px] w-[340px] h-[294px] rounded-[20px] p-[20px] flex justify-center flex-col items-center text-center mr-[16px]" >
+                            <div key={index} className="border-[#E8E9ED] border-[1.5px] w-[340px] h-[294px] rounded-[20px] p-[20px] flex justify-center flex-col items-center text-center mr-[16px]" >
                                 <div className="w-[88px] h-[88px] rounded-full relative mb-[8px]">
                                     <Image src={review.image} alt="webb" objectFit="contain" layout="fill" quality={100} />
                                 </div>

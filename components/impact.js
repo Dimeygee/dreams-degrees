@@ -37,7 +37,7 @@ export default function Impact(){
                             <Image src={eng} alt="eng" layout="fill" objectFit="contain" quality={90}/>
                         </div>  
                         <b className="my-4 block text-21">Community Engagement</b> 
-                        <p className="xl:w-[413px] text-para2 text-18">Provide value-based community for likeminded females to explore and do life together through virtual meets/hangouts, online events, webinars and workshops</p>
+                        <p className="xl:w-[413px] text-para2 text-18">Provide value-based community for likeminded females to explore and do life together through virtual meets/hangouts, online events, webinars and workshops.</p>
                     </div> 
             </article>
             </div>

@@ -9,6 +9,7 @@ import Community from '../components/community'
 import { motion } from 'framer-motion'
 import GetInvolved from "../components/getinvolved"
 import BButton from '../components/BButton'
+import Link from "next/link"
 
 
 
@@ -40,7 +41,7 @@ export default function Home() {
       </Head>
 
       <section className="w-[100%] h-[20px]"></section>
-      <section className="text-center pt-[101px] md:pt-[160px] grow flex flex-col justify-between">
+      <section className="text-center pt-[113px] md:pt-[180px] grow flex flex-col justify-between">
           <motion.h1 
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -63,11 +64,15 @@ export default function Home() {
                   <span className="text-16 font-[600]">Join Community</span>                  
                 </BButton>
             </span>
-              <span className="md:ml-5  w-[230px] inline-block">
-                <BButton backgroundColor="transparent" padding="15px 0" color="black" border="2px solid black" width="100%">
-                  <span className="text-16 font-[600]">Get Involved</span>                  
-                </BButton>
-              </span>
+            <Link href="#getinvolved">
+              <a >
+                <span className="md:ml-5  w-[230px] inline-block">
+                  <BButton backgroundColor="transparent" padding="15px 0" color="black" border="2px solid black" width="100%">
+                    <span className="text-16 font-[600]">Get Involved</span>                  
+                  </BButton>
+                </span>
+              </a>
+            </Link>
           </motion.div>
         <motion.div 
         initial={{ opacity: 0, y: 100 }}

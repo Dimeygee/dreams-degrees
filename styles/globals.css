@@ -89,6 +89,51 @@ body {
   font-weight:400;
 }
 
+.involved_bg{
+  background-color:rgba(0,0,0,0.3);
+}
+
+#mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif;  
+  width:600px;
+  margin:20px auto;
+  border-radius:28px;
+}
+#mc_embed_signup form{
+    padding:10px !important;
+}
+
+#mc_embed_signup .foot{
+    display:block;
+    width:100%;
+}
+
+#mc_embed_signup .mc-field-group{
+    width:100%;
+}
+
+#mc_embed_signup_scroll{
+  overflow-y:auto;
+  height:80vh;
+}
+
+#mc_embed_signup .size1of2{
+  margin-right:0;
+}
+
+#mc_embed_signup .mc-field-group input{
+  background-color: #E7E5EA !Important;
+  border:none !important;
+  border-radius:28px;
+}
+#mc_embed_signup .button{
+  background-color: #D68676 !Important;
+  border:none !important;
+  outline:none;
+}
+
 .link.active{
   font-size:16px;
   font-weight:600;
@@ -168,7 +213,6 @@ body {
   z-index:4;
   background-color:#D68676 ;
 }
-
 
 
 @media screen and (max-width:540px){

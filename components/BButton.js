@@ -9,7 +9,7 @@ export default function BButton({children,
      marginTop,
      margin,
      border,
-     width
+     width,
     }){
 
     const style = {
@@ -23,7 +23,7 @@ export default function BButton({children,
         marginTop:marginTop ,
         margin: margin,
         border: border,
-        width:width
+        width:width,
      }
 
 

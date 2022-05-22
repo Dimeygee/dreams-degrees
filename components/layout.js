@@ -3,6 +3,7 @@ import Footer from "./footer"
 import dynamic  from "next/dynamic"
 
 const MobileNav = dynamic(() => import("./mobilenav"))
+const ModalForm = dynamic(() => import("./modalform"))
 
 
 export default function Layout ({  children  }) {
@@ -12,6 +13,7 @@ export default function Layout ({  children  }) {
         <>
             <NavLayout />
             <MobileNav />
+            <ModalForm />
             { children }
             <Footer />
         </>
