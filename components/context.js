@@ -6,12 +6,12 @@ export default function ContextWrapper({ children }){
 
     const [ open, isOpen ] = useState(false) 
     const [ openForm, setIsopenForm ] = useState(false)
-    const [ involvedAs, setInvovedAs ] = useState("")
+    const [ getInvolvedAs, setInvolvedAs ] = useState("")
 
     
 
     return(
-        <MenuContext.Provider value={{open, isOpen,  openForm, setIsopenForm ,involvedAs, setInvovedAs}}>
+        <MenuContext.Provider value={{open, isOpen,  openForm, setIsopenForm ,getInvolvedAs, setInvolvedAs}}>
             {children}
         </MenuContext.Provider>
     ) 

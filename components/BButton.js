@@ -1,16 +1,25 @@
+import { MenuContext } from "./context"
+import { useContext } from "react"
 
 
 
-export default function BButton({children,
-     padding, 
-     fontSize,
-     color, 
-     backgroundColor,
-     marginTop,
-     margin,
-     border,
-     width,
+
+export default function BButton({
+        children,
+        padding, 
+        fontSize,
+        color, 
+        backgroundColor,
+        marginTop,
+        margin,
+        border,
+        width,
+        involedAs
     }){
+
+    const menucontext = useContext(MenuContext) 
+
+    const { getInvolvedAs, setInvolvedAs , setIsopenForm, openForm} = menucontext
 
     const style = {
         padding:padding,
@@ -26,9 +35,19 @@ export default function BButton({children,
         width:width,
      }
 
+    const handleClick = () => {
+        setInvolvedAs(involedAs)
+        if(involedAs !== undefined){
+            setIsopenForm(!openForm)
+        }
+    }
+
+    
 
     return(
-        <button style={style} className="rounded-[28px] text-center">{ children }</button>
+        <button style={style} className="rounded-[28px] text-center" onClick={handleClick}>
+            { children }
+        </button>
     )
 
 }

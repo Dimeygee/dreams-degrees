@@ -44,7 +44,7 @@ export default function Programs(){
             </div>
             <div className="hidden md:block text-center mt-[88px] mb-[162px] font-fellix">
                 <p className="text-18 font-[400] text-para2">Want to learn more? Click on the button below</p>
-               <Link href="programs/0">
+               <Link href="/programs/0">
                     <a>
                         <BButton backgroundColor="#D68676" color="white" padding="15px 41px" marginTop="24px" margin="24px auto">
                             <span>See more details</span>

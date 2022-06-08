@@ -6,12 +6,11 @@ import Link from "next/link"
 
 export default function P_side(){
 
-
     const router = useRouter()
 
     return(
         <>
-             <div className="pb-[60px] md:pb-0 md:pr-[60px] md:w-[650px] border-[#A0AEC0] md:border-b-0 border-b-[0.5px]">
+             <div className="pb-[60px] md:pb-0 md:pr-[60px] md:w-[300px] xl:w-[650px] border-[#A0AEC0] md:border-b-0 border-b-[0.5px]">
                         <h1 className="text-42 md:text-56 text-[#343232] font-[700] md:text-left text-center leading-[61px] mb-[64px] font-paytone">Our <br className="hidden md:block" /> <span className='text-pry'>programs</span></h1>
                         {programsUtils.map((program, index) => {
                             return (

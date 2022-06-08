@@ -20,7 +20,9 @@ export default function Footer() {
                      <small className="font-[700] text-16 ">Join the community</small>
                     <form className='footer_form mt-[32px] flex xl:flex-row flex-col'>
                         <div className="mt-3 xl:mt-0 font-[700]">
-                            <BButton  width="260px" fontSize="16px"   backgroundColor="white" color="#D68676" padding="15px 0" ><b className="uppercase">join now</b></BButton>
+                            <a target="_blank" href="https://airtable.com/shrWVSnmnBL4JilPy">
+                                <BButton  width="260px" fontSize="16px"   backgroundColor="white" color="#D68676" padding="15px 0" ><b className="uppercase">join now</b></BButton>
+                            </a>           
                         </div>
                     </form>
                 </div>
@@ -37,7 +39,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li className="md:mt-0 mt-[40px]">
-                                <Link href="/programs">
+                                <Link href="/programs/0">
                                     <a className="text-16 font-[700]" >Programs</a>
                                 </Link>
                             </li>

@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const webpack = require("webpack");
 const nextConfig = {
-  reactStrictMode: true,images:{
+  reactStrictMode: false,
+  images:{
     domains: ['res.cloudinary.com'],
   },
   env: {

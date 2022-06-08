@@ -93,6 +93,37 @@ body {
   background-color:rgba(0,0,0,0.3);
 }
 
+.form-control{
+  position: relative;
+  margin: 20px 0 40px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.form-control input, 
+.form-control textarea,
+.form-control select{
+  width:100%;
+  border:none;
+  outline:none;
+  padding: 15px 0;
+  font-size: 18px;
+  border-bottom:2px solid rgb(214, 134, 118);
+}
+
+.form-control select{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border:0 0 2px 0;
+}
+
+
+
 #mc_embed_signup{
   background:#fff; 
   clear:left; 
@@ -152,15 +183,23 @@ body {
 .program_content{
   overflow-y: overlay;
 }
-.program_content::-webkit-scrollbar{
+.formcontainer{
+  max-width:700px;
+  width:100%;
+}
+.program_content::-webkit-scrollbar, 
+.formcontainer::-webkit-scrollbar{
   width:4px;
 }
-.program_content::-webkit-scrollbar-track{
+.program_content::-webkit-scrollbar-track,
+.formcontainer::-webkit-scrollbar-track{
   background: #EDF2F7;
 }
-.program_content::-webkit-scrollbar-thumb{
+.program_content::-webkit-scrollbar-thumb,
+.formcontainer::-webkit-scrollbar-thumb{
   background: #D68676;
 }
+
 
 .speaker, .volunteer, .mentor, .sponsor{
   background-position: center center;
@@ -212,6 +251,40 @@ body {
   background-position:center;
   z-index:4;
   background-color:#D68676 ;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  margin: 8px;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 

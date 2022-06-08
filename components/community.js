@@ -26,14 +26,16 @@ export default function Community(){
                             </p>
                         </div>
                         <div className="flex justify-center md:justify-start font-fellix">
-                            <BButton backgroundColor="#D68676" padding="15px 43px" color="white">
-                                <span className="text-16 font-[600]">Join Community</span>
-                                <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
-                                        <div className="relative w-[10px] h-[10px]">
-                                            <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
-                                        </div>
-                                </div>
-                            </BButton>
+                            <a target="_blank" href="https://airtable.com/shrWVSnmnBL4JilPy">
+                                <BButton backgroundColor="#D68676" padding="15px 43px" color="white">
+                                    <span className="text-16 font-[600]">Join Community</span>
+                                    <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
+                                            <div className="relative w-[10px] h-[10px]">
+                                                <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
+                                            </div>
+                                    </div>
+                                </BButton>
+                            </a>
                         </div>
                     </div>
                 </div>
