@@ -18,13 +18,13 @@ export default function Footer() {
               <div className='xl:container mx-auto px-6 md:px-10 text-white flex  flex-col md:flex-row justify-between mb-[78px] md:mb-[129px]'>
                 <div className="xl:w-100p">
                      <small className="font-[700] text-16 ">Join the community</small>
-                    <form className='footer_form mt-[32px] flex xl:flex-row flex-col'>
-                        <div className="mt-3 xl:mt-0 font-[700]">
+                    <div className='footer_form mt-[32px] flex xl:flex-row flex-col'>
+                        <div className="mt-2 xl:mt-0 font-[700]">
                             <a target="_blank" href="https://airtable.com/shrWVSnmnBL4JilPy">
                                 <BButton  width="260px" fontSize="16px"   backgroundColor="white" color="#D68676" padding="15px 0" ><b className="uppercase">join now</b></BButton>
-                                </a>           
+                            </a>           
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div className="footer_link md:mt-0 mt-[83px]">
                     <ul className="flex w-[100%] md:w-[332px]  justify-between  md:flex-row flex-col">
