@@ -22,7 +22,7 @@ export default function Footer() {
                         <div className="mt-3 xl:mt-0 font-[700]">
                             <a target="_blank" href="https://airtable.com/shrWVSnmnBL4JilPy">
                                 <BButton  width="260px" fontSize="16px"   backgroundColor="white" color="#D68676" padding="15px 0" ><b className="uppercase">join now</b></BButton>
-                            </a>           
+                                </a>           
                         </div>
                     </form>
                 </div>

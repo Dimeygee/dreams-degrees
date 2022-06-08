@@ -1,4 +1,3 @@
-import { useRef } from "react"
 import { Caret } from "../icons/icons"
 
 export const TextInput = ({ type, value, name, change }) => (
@@ -32,7 +31,7 @@ export const SelectInput = ({ name,value, change , options, placeholder}) => (
 
 export const TextArea = ({ name, value, change }) => (
     <div className="form-control">
-        <textarea row="4" value={value} onChange={(e) => change(e.target.value)} placeholder={name}></textarea>
+        <textarea row="4" value={value} name={name} onChange={(e) => change(e.target.value)} placeholder={name} required></textarea>
     </div>
 )
 
