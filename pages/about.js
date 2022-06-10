@@ -4,8 +4,10 @@ import ladiesgroup from "../public/images/ladiesgroup.png"
 import Impact from '../components/impact'
 import Membership from '../components/membership'
 import Head from "next/head"
+import { useEffect } from "react"
 
 export default function About(){
+
 
     return (
         <div className="about_bg min-h-[50vh]">

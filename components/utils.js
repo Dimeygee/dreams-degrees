@@ -132,14 +132,14 @@ export const programs = [
         id: 1,
         image: ibutton,
         head:"Internship (Coming soon)",
-        text:"Dreams & Degrees is currently working to introduce a program that offers females interested in technology the opportunity to gain real world experience, invaluable training as well as confidence and network building. Click here to Join waitlist."
+        text:"Dreams & Degrees is currently working to introduce a program that offers females interested in technology the opportunity to gain real world experience, invaluable training as well as confidence and network building."
      },
      
      { 
         id: 2,
         image: apt,
         head:"Accountability Partner in Technology",
-        text:"Our accountability partner program aims to match interested community members with ambitious, intentional and like-minded individual(s) in technology that would help you stay committed to your goals for the new year."
+        text:"Our accountability partner program aims to match interested community members with ambitious, intentional and like-minded individual(s) in technology that would help you stay committed to your goals."
      },
      { 
         id: 3,
@@ -157,6 +157,6 @@ export const programs = [
         id: 5,
         image: events,
         head:"D&D Events",
-        text:"We organize virtual hangouts, twitter space discussions, workshops, and webinars for females to connect, learn and grow in a safe virtual or physical environment. Keep your eye open for all the details in the events section of this website, newsletter or follow us on social media and we will keep you posted about dates and venues."
+        text:"We organize virtual hangouts, twitter space discussions, workshops, and webinars for females to connect, learn and grow in a safe virtual or physical environment.  keep an eye out for more details on our social media platforms"
      },
 ]

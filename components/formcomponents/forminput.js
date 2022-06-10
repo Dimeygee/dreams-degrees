@@ -1,37 +1,62 @@
 import { Caret } from "../icons/icons"
 
-export const TextInput = ({ type, value, name, change }) => (
+export const TextInput = ({ type, value, name, change, placeholder=null }) => (
     <div className="form-control">
+            <label>{name}:</label>
             <input 
                 type={type} 
                 value={value} 
                 name={name} 
                 onChange={(e) => change(e.target.value)} 
+                placeholder={placeholder}
                 required
-                placeholder={name}
                 />
     </div>
 )
 
 
 export const SelectInput = ({ name,value, change , options, placeholder}) => (
+
     <div className="form-control">
-        <select required name={name} value={value}  onChange={(e) => change(e.target.value)} >
-            <option value="" disabled selected>{placeholder}</option>
+        <label>{name}:</label>
+        <select required name={name} value={value} defaultValue="" onChange={(e) => change(e.target.value)} className="text-[13px]">
+            <option value="" disabled selected ></option>
             { options.map((option, index) => {
                 return (
-                    <option key={index} value={option}>{option}</option>
+                    <option key={index} value={option} >{option}</option>
                 )
             }) }
         </select>
-        <span className="absolute top-[40%] right-[5px]" ><Caret /></span>
+        <span className="absolute top-[60%] right-[5px]" ><Caret /></span>
     </div>
 )
 
 
 export const TextArea = ({ name, value, change }) => (
     <div className="form-control">
-        <textarea row="4" value={value} name={name} onChange={(e) => change(e.target.value)} placeholder={name} required></textarea>
+        <label>{name}:</label>
+        <textarea row="6" value={value} name={name} onChange={(e) => change(e.target.value)} required></textarea>
     </div>
 )
+
+export const RadioboxInput = ({ name,value, change, options }) => (
+    <div className="form-control">
+        {options.map((option, index) => {
+            return(
+                    <label className="radio">
+                        <input key={index} type="radio" name={name} value={option} onChange={e => change(e.target.value)} required/>
+                        <span>{option}</span>
+                    </label>
+            )
+        })}
+    </div>
+)
+
+export const CheckboxInput = ({name} ) => (
+    <div className="form-control checkbox">
+        <label>{name}:</label>
+        <input type="checkbox"  required/>
+    </div>
+)
+
 

@@ -15,7 +15,7 @@ export default function P_side(){
                         {programsUtils.map((program, index) => {
                             return (
                                 <Link href="/programs/[id]" as={`/programs/${program.id}`} key={index}>
-                                    <a>
+                                    <a >
                                         <div  className={`${parseInt(router.query.id) === program.id ? "bg-[#E7E5EA]  border-[0.682471px] border-[#D68676]" : "transparent"} font-fellix mb-[16.3px] hover:bg-[#E7E5EA] border-[#E7E5EA] transition duration-100 cursor-pointer flex items-center rounded-[21.8391px] p-[22px] hover:border-[#D68676] border-[0.682471px]`}>
                                             <div className="relative w-[22px] h-[22px] mr-[18px]">
                                                 <Image src={program.image} alt="category" layout="fill" quality={100}  priority />

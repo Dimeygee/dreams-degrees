@@ -15,20 +15,18 @@ export default function EventsProgram(){
             </article>
             <div className="mt-[32px] flex xl:flex-row flex-col">
             <div className="md:w-[100%] xl:w-[40%] xl:mb-0 mb-3">
-                        <a target="_blank" href="https://airtable.com/shrWVSnmnBL4JilPy">
-                            <BButton backgroundColor="#D68676" padding="15px" color="white" width="100%" >
-                                <span className="text-16 font-[600]">Join Community</span>
+                            <BButton backgroundColor="#D68676" padding="15px" color="white" width="100%" involedAs="join the community">
+                                <span className="text-16 font-[600]">Join the community</span>
                                 <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
                                     <div className="relative w-[10px] h-[10px]">
                                         <Image src={rightbrown}  alt="rightbrown" layout="fill" quality={100}  />
                                     </div>
                                 </div>                    
                             </BButton>
-                        </a>
                         </div>
                         <div className="xl:mt-0 xl:ml-5 mt-[24px] xl:grow xl:w-0 w-100p">
                             
-                                <BButton backgroundColor="white" border="2px solid #D68676" padding="15px" color="#D68676" width="100%" involedAs="patner/sponsor">
+                                <BButton backgroundColor="white" border="2px solid #D68676" padding="15px" color="#D68676" width="100%" involedAs="partnership/sponsorship">
                                     <span className="text-16 font-[600]">Become a partner/sponsor</span>
                                     <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#D68676] flex items-center justify-center'>
                                         <div className="relative w-[15px] h-[15px]">

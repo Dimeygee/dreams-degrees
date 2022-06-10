@@ -1,24 +1,14 @@
-import mbutton from "../public/images/mbutton.png"
 import Image from "next/image"
-import ibutton from "../public/images/ibutton.png"
-import events from "../public/images/events.png"
-import ddbg from "../public/images/ddbg.png"
-import apt from "../public/images/apt.png"
-import swt from "../public/images/swt.png"
 import BButton from "./BButton"
-import { useRouter } from "next/router"
 import Link from "next/link"
 import { programs } from "./utils"
+import CommunityBtn from "./communitybtn"
 
 
 export default function Programs(){
-
-    const router = useRouter()
-
-
-
+    
     return (
-        <section className="program_container py-[29px] px-6 md:px-0 md:mb-0 md:mt-0 mt-[134px] mb-[158px]">
+        <section className="program_container py-[29px] px-6 md:px-0 md:mb-0 md:mt-0 mt-[124px] lg:mb-[30px]">
            
             <div className="px-6 xl:p-0 xl:container mx-auto">
             <h1 className="md:text-56 leading-[58px] md:leading-0 text-42  text-center font-paytone">Our <span className="text-pry">Programs</span></h1>
@@ -42,8 +32,8 @@ export default function Programs(){
                 }) }
                 
             </div>
-            <div className="hidden md:block text-center mt-[88px] mb-[162px] font-fellix">
-                <p className="text-18 font-[400] text-para2">Want to learn more? Click on the button below</p>
+            <div className="text-center mt-[88px] mb-[100px] font-fellix">
+                <p className="text-18 font-[400] text-para2">Click on the button below to learn more.</p>
                <Link href="/programs/0">
                     <a>
                         <BButton backgroundColor="#D68676" color="white" padding="15px 41px" marginTop="24px" margin="24px auto">
@@ -51,6 +41,7 @@ export default function Programs(){
                         </BButton>
                     </a>
                </Link>
+               <CommunityBtn />
             </div>
             </div>
         </section>

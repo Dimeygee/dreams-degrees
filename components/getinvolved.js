@@ -8,29 +8,6 @@ import { useContext } from "react"
 
 export default function GetInvolved(){
 
-/*
-    const handleClick = e => {
-        setInvovedAs("")
-       if(e.target.parentElement.parentElement.classList.contains("speaker_btn") || 
-       e.target.classList.contains("speaker_btn")){
-            setInvovedAs("Speaker")
-       }
-       if(e.target.parentElement.parentElement.classList.contains("mentor_btn") || 
-       e.target.classList.contains("mentor_btn")){
-            setInvovedAs("Mentor")
-       }
-       if(e.target.parentElement.parentElement.classList.contains("volunteer_btn") || 
-       e.target.classList.contains("volunteer_btn")){
-            setInvovedAs("Volunteer")
-       }
-       if(e.target.parentElement.parentElement.classList.contains("sponsor_btn") || 
-       e.target.classList.contains("sponsor_btn")){
-            setInvovedAs("Patner/Sponsor")
-       }   
-        setIsopenForm(!openForm)
-    }*/
-
-    
 
     return (
         <div id="getinvolved">
@@ -57,8 +34,8 @@ export default function GetInvolved(){
                         <div className="volunteer  rounded-[32px] h-[237px] md:h-[220px] lg:h-[235.5px] xl:h-[250px] flex flex-col justify-end pb-[24px] text-center">
                             <h4 className="text-22 font-[700] mb-[24px]">Become a Volunteer</h4>
                             <div className="volunteer_btn flex justify-center">
-                                <a target="_blank" href="https://dreamsandegrees.typeform.com/to/sPPLQriT?typeform-source=linktr.ee" className='volunteer_btn block  w-[70%]'>
-                                    <BButton padding='15px 0' width="100%" backgroundColor="#D68676">
+                                <span className='volunteer_btn block  w-[70%]'>
+                                    <BButton padding='15px 0' width="100%" backgroundColor="#D68676" involedAs="Volunteer">
                                         <span className="mr-2">Apply</span>
                                         <div className="bg-[white] w-[25px] h-[25px] flex justify-center items-center rounded-full">
                                             <div className="volunteer_btn relative w-[15px] h-[15px]">
@@ -66,14 +43,14 @@ export default function GetInvolved(){
                                             </div>
                                         </div>
                                     </BButton>
-                                </a>    
+                                </span>    
                             </div>
                         </div>
                         <div className="mentor rounded-[32px] h-[237px] md:h-[220px] lg:h-[235.5px]  xl:h-[250px] flex flex-col justify-end pb-[24px] text-center">
                         <h4 className="text-22 font-[700] mb-[24px]">Become a Tech Mentor</h4>
                             <div className="mentor_btn flex justify-center">
                             <span className='mentor_btn block  w-[70%]'>
-                                <BButton padding='15px 0' width="100%" backgroundColor="#D68676" involedAs="mentor">
+                                <BButton padding='15px 0' width="100%" backgroundColor="#D68676" involedAs="mentorship">
                                         <span className="mr-2">Apply</span>
                                         <div className="bg-[white] w-[25px] h-[25px] flex justify-center items-center rounded-full">
                                             <div className="mentor_btn relative w-[15px] h-[15px]">
@@ -89,7 +66,7 @@ export default function GetInvolved(){
                     <h4 className="text-22 font-[700] mb-[24px]">Become a Partner / Sponsor</h4>
                         <div className="sponsor_btn flex justify-center">
                         <span className='sponsor_btn block  w-[70%]'>
-                            <BButton padding='15px 0' width="100%" backgroundColor="#D68676" involedAs="patner/sponsor">
+                            <BButton padding='15px 0' width="100%" backgroundColor="#D68676" involedAs="partnership/sponsorship">
                                 <span className="mr-2">Apply</span>
                                 <div className="bg-[white] w-[25px] h-[25px] flex justify-center items-center rounded-full">
                                     <div className="sponsor_btn relative w-[15px] h-[15px]">

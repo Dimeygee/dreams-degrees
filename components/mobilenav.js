@@ -52,7 +52,7 @@ export default function MobileNav(){
                         <Link href="/about" ><a style={route === "/about" ? { fontSize: "16px", color:"#12022F", fontWeight:700 } : { fontSize: "16px", color: "#12022F", fontWeight:400 } }>About</a></Link>
                     </li>
                     <li>
-                        <Link href="/programs" ><a style={route === "/programs/[id]" ? { fontSize: "16px", color:"#12022F", fontWeight:700 } : { fontSize: "16px", color: "#12022F", fontWeight:400 } } >Programs</a></Link>
+                        <Link href="/programs/0" ><a style={route === "/programs/[id]" ? { fontSize: "16px", color:"#12022F", fontWeight:700 } : { fontSize: "16px", color: "#12022F", fontWeight:400 } } >Programs</a></Link>
                     </li>
                      <li>
                        <Link href="/contact"><a  style={route === "/contact" ? { fontSize: "16px", color:"#12022F", fontWeight:700 } : { fontSize: "16px", color: "#12022F", fontWeight:400 } }>Contact</a></Link>

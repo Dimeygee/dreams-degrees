@@ -7,6 +7,7 @@ import GetInvolved from '../components/getinvolved'
 import { useForm } from '@formspree/react';
 import { useState } from 'react'
 import { Loader } from '../components/formcomponents/loader'
+import { useEffect } from 'react'
 
 
 export default function Contact() {

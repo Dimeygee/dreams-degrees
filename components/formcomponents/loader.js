@@ -10,7 +10,7 @@ export const Loader = ({ color }) => {
 
     return (
         <div className="flex justify-center">
-            <div class="lds-ring">
+            <div className="lds-ring">
                 <div style={style}></div>
                 <div style={style}></div>
                 <div style={style}></div>

@@ -1,9 +1,12 @@
-import { useContext,useState } from "react"
+import { useContext } from "react"
 import { MenuContext } from "./context"
 import SpeakerAndPatnerForm from "./formcomponents/speakerAndPatenerForm"
 import MentorFormComponent from "./formcomponents/mentorform"
 import InterShipForm from "./formcomponents/intershipform"
 import MenteesFormComponent from "./formcomponents/menteesform"
+import CommunityFormComponent from "./formcomponents/communityform"
+import AccountabilityFormComponent from "./formcomponents/accountabilitybuddyform"
+import Volunteer from "./formcomponents/volunteer"
 
 
 const SpeakerForm = () => <SpeakerAndPatnerForm formkey={`${process.env.NEXT_PUBLIC_SPEAKER}`} />
@@ -16,16 +19,21 @@ const InternForm = () => <InterShipForm formkey={`${process.env.NEXT_PUBLIC_INTE
 
 const TechnologyMentorShipProgram = () => <MenteesFormComponent  formkey={`${process.env.NEXT_PUBLIC_MENTEES}`} />
 
+const CommunityForm  = () => <CommunityFormComponent  />
+
+const AccountabilityBuddyForm = () => <AccountabilityFormComponent formkey={`${process.env.NEXT_PUBLIC_ACCOUNTABILITY}`} />
+
+const VolunteerForm = () => <Volunteer  formKey={`${process.env.NEXT_PUBLIC_VOLUNTEER}`} />
+
 
 export default function GetInvolvedForms(){
 
+    
 
     const menucontext = useContext(MenuContext) 
 
     const { getInvolvedAs } = menucontext
-
     
-
     const handleSubmit = e => {
 
         e.preventDefault()
@@ -62,10 +70,13 @@ export default function GetInvolvedForms(){
     return(
         <>
             { getInvolvedAs === "speaker" && <SpeakerForm /> }
-            { getInvolvedAs === "mentor" && <MentorForm /> }
-            { getInvolvedAs === "patner/sponsor" && <PatnerOrSponsorForm /> }
-            { getInvolvedAs === "intern" && <InternForm /> }
+            { getInvolvedAs === "mentorship" && <MentorForm /> }
+            { getInvolvedAs === "partnership/sponsorship" && <PatnerOrSponsorForm /> }
+            { getInvolvedAs === "internship" && <InternForm /> }
             { getInvolvedAs === "Technology mentoship program" &&  <TechnologyMentorShipProgram /> }
+            { getInvolvedAs === "join the community" && <CommunityForm /> }
+            { getInvolvedAs === "Accountability Partner" && <AccountabilityBuddyForm  /> }
+            { getInvolvedAs === "Volunteer" && <VolunteerForm /> }
         </>
     )
 

@@ -5,11 +5,11 @@ import WhoWeAre from '../components/whoarewe'
 import Impact from '../components/impact'
 import Programs from "../components/program"
 import Membership from '../components/membership'
-import Community from '../components/community'
 import { motion } from 'framer-motion'
 import GetInvolved from "../components/getinvolved"
 import BButton from '../components/BButton'
 import Link from "next/link"
+import { useEffect } from "react"
 
 
 
@@ -29,6 +29,7 @@ const variants = {
 
 
 export default function Home() {
+
   return (
     <div>
       <header className='header_container img_box xl:min-h-1/2 relative mb-[102px] md:mb-0  flex flex-col justify-between overflow-hidden'>
@@ -60,11 +61,9 @@ export default function Home() {
           animate="visible"
           className='header_btn_div md:mt-[40px] px-[20px] md:px-0 font-fellix items-center flex md:flex-row flex-col justify-center'>
             <span className="w-[230px] inline-block mb-3 md:mb-0">
-                <a target="_blank" href="https://airtable.com/shrWVSnmnBL4JilPy">
-                  <BButton backgroundColor="#D68676" padding="15px 0" color="white" width="100%">
-                    <span className="text-16 font-[600]">Join Community</span>                  
+                  <BButton backgroundColor="#D68676" padding="15px 0" color="white" width="100%" involedAs="join the community">
+                    <span className="text-16 font-[600]" >Join Community</span>                  
                   </BButton>
-                </a>
             </span>
             <Link href="#getinvolved">
               <a >
@@ -90,8 +89,7 @@ export default function Home() {
         <Impact />
         <Membership />
         <Programs />
-        <Community />
-        <section className="mb-[287px]">
+        <section className="mb-[224px]">
           <GetInvolved />
         </section>
       </main>

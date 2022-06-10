@@ -42,7 +42,7 @@ export default function Membership(){
                     <span className='block w-[23px] h-[23px] relative mr-[23px]'>
                         <Image src={star} layout="fill" objectFit="contain" quality={100}/>
                     </span>
-                    <p className="text-mtext text-16 font-[600] mt-[16px] md:mt-0">Access to 6 months female-focused technology mentorship program.</p>
+                    <p className="text-mtext text-16 font-[600] mt-[16px] md:mt-0">Access to 3 months female-focused technology mentorship program.</p>
                 </article>
                 <article className="flex items-center text-center md:text-left flex-col md:flex-row">
                     <span className='block w-[33px] h-[33px] relative mr-[23px]'>
@@ -51,14 +51,6 @@ export default function Membership(){
                     <p className="text-mtext text-16 font-[600] mt-[16px] md:mt-0">Get matched with an Accountability buddy to help you stay motivated in your tech journey.</p>
                 </article>
             </div>
-            <section className="md:w-[382px] mx-auto mt-7 font-fellix">
-                <div className="flex items-center text-center md:text-left flex-col md:flex-row">
-                    <span className='block w-[43px] h-[33px] relative mr-[23px]'>
-                        <Image src={star} layout="fill" objectFit="contain" quality={100}/>
-                    </span>
-                    <p className="text-mtext text-16 font-[600] mt-[16px] md:mt-0">Get matched with an Accountability buddy to help you stay motivated in your tech journey.</p>
-                </div>
-            </section>
             <section className="flex justify-center mt-[48px] md:flex-row flex-col font-fellix">
                 <div className="md:w-[484px]  mx-auto flex justify-between  md:flex-row flex-col">
                     <span className="w-[230px] mb-4">

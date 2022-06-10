@@ -12,7 +12,7 @@ export default function Impact(){
             className="text-42 md:text-56 text-center mt-10 leading-[59px] font-paytone">Our Areas of <span className='text-pry'>Impact</span></h1> 
             <br /> 
             <p  className="text-para2 text-18 xl:w-747 mx-auto text-center font-fellix">
-            While most of our initiatives are geared towards supporting females in technology and female entrepreneurs, our goal at Dreams & Degrees is to provide opportunities that would enable success for all women.</p>
+            While most of our initiatives are geared towards supporting females in technology and entrepreneurship, our goal at Dreams & Degrees is to provide opportunities that would enable success for all women.</p>
             <article 
             className="md:container md:mx-auto xl:w-[820px] mt-[94px] md:mt-0  flex justify-between flex-col md:flex-row font-fellix">
                 <div className="md:w-[45%]  text-center flex flex-col justify-center items-center">
@@ -27,7 +27,7 @@ export default function Impact(){
                         <Image src={ent} alt="ent" layout="fill" quality={90} />
                     </div>  
                     <b className="my-4 block text-21">Entrepreneurship</b> 
-                    <p className="xl:w-[413px] text-para2 text-18">Increase access to funds and investment opportunities for female founders/ entrepreneurs through provision of Business grants to entrepreneurs.Increase access to funds and investment opportunities for female founders/ entrepreneurs through provision of Business grants to entrepreneurs.</p>
+                    <p className="xl:w-[413px] text-para2 text-18">Increase access to funds and investment opportunities for female founders/ entrepreneurs through provision of Business grants to entrepreneurs.</p>
                 </div> 
             </article> 
             <article 

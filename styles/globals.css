@@ -95,13 +95,11 @@ body {
 
 .form-control{
   position: relative;
-  margin: 20px 0 40px;
+  margin: 50px 0 40px;
 }
 
 .form-control label {
-  position: absolute;
-  top: 15px;
-  left: 0;
+  display:block;
 }
 
 .form-control input, 
@@ -110,10 +108,17 @@ body {
   width:100%;
   border:none;
   outline:none;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 18px;
   border-bottom:2px solid rgb(214, 134, 118);
 }
+
+
+.form-control .radio input, 
+.form-control .radio label,
+.form-control.checkbox input{
+ width:unset;
+} 
 
 .form-control select{
   -webkit-appearance:none;
@@ -121,8 +126,6 @@ body {
   appearance:none;
   border:0 0 2px 0;
 }
-
-
 
 #mc_embed_signup{
   background:#fff; 
@@ -222,7 +225,103 @@ body {
   background-image:url("https://res.cloudinary.com/dimejiscloud/image/upload/q_auto:best/v1652026709/dd/patner_vo89rl.png");
 }
 
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: #D68676;
+  width: 20px !important;
+  height: 16px !important;
+  border: 0.15em solid #D68676;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
 
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #D68676;
+  background-color: #D68676;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid #D68676;
+  outline-offset: max(2px, 0.15em);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid #D68676;
+  outline-offset: max(2px, 0.15em);
+}
+.radio{
+  display:flex !important;
+  gap:10px;
+}
+
+.form-control  .radio {
+  margin-top: 1em;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  margin-top:15px;
+  font: inherit;
+  color: #D68676;
+  width: 1.15em !important;
+  height: 1.15em;
+  border: 0.15em solid #D68676;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em ;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #D68676;
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid #D68676;
+  outline-offset: max(2px, 0.15em);
+}
+
+.owl-nav{
+  position:absolute;
+  width:100%;
+  display:flex;
+  top:35%;
+  justify-content:space-between;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+  color:#D68676 !important;
+  font-size:40px !important;
+  font-weight:900 !important;
+}
 
 .contact_form form label  input, .textarea, .contact_btn{
   width:540px;
@@ -293,6 +392,9 @@ body {
   width:100%;
 }
 
+.footer_logo{
+  transform:translateX(15px);
+}
   
   .program_art{
     width:100%;
@@ -315,6 +417,18 @@ body {
 }
 
   
+}
+
+@media screen and (min-width:428px) and  (max-width:540px){
+  .review_slide{
+    width:360px;
+  }
+}
+
+@media screen and (min-width:375px) and  (max-width:414px){
+  .review_slide{
+    width:300px;
+  }
 }
 
 

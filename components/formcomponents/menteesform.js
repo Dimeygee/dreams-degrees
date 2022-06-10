@@ -25,7 +25,7 @@ export default function MenteesFormComponent({formkey}){
 
     const [state, handleSubmit] = useForm(formkey);
 
-    const options = ["Front end dev", "back-end dev","mobile dev", "UI/UX design", "data analytics", "cyber security","technical writer"]
+    const options = ["Front end dev", "Back-end dev","Mobile dev", "UI/UX design", "Data analytics", "Cyber Security","Technical writer"]
 
     return(
         <FormContainer  handleSubmit={handleSubmit}>

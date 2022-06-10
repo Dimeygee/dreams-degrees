@@ -4,12 +4,25 @@ import { programsArray} from "../../components/utils"
 import GetInvolved from "../../components/getinvolved"
 import ProgramsMain from "../../components/programsmain"
 import { useRouter } from "next/router"
+import { useEffect, useRef , useLayoutEffect} from "react"
+
 
 
 
 export default function Programs(){
 
     const router = useRouter()
+
+    const refSection =  useRef() 
+
+    useLayoutEffect(() => {
+        window.scrollTo(0,0)
+    },[])
+
+    useEffect(() => {
+        refSection.current.scrollIntoView({ behaviour: "smooth" })
+    },[router.query.id])
+
 
     return(
         <section >
@@ -21,8 +34,8 @@ export default function Programs(){
             </Head>
 
             <div className="program_bg pline py-[38px] md:pb-[62px] pt-[113px] md:pt-[180px]"> 
-                <ProgramsMain >
-                <div className="program_content md:mt-0 mt-[75px] w-[100%] md:border-t-none md:border-l-[0.5px] h-[930px] md:h-[988px]  border-[#A0AEC0] relative font-fellix">
+                <ProgramsMain  >
+                <div className="program_content md:mt-0 mt-[75px] w-[100%] md:border-t-none md:border-l-[0.5px] h-[930px] md:h-[988px]  border-[#A0AEC0] relative font-fellix" ref={refSection}>
                         { programsArray.map((program, index) => {
                             return (
                                 <div key={index}>
@@ -32,7 +45,7 @@ export default function Programs(){
                                         initial={{ opacity: 0  }}
                                         animate={parseInt(router.query.id) === program.id ? { opacity: 1 } : { opacity: 0  }}
                                         exit={{ opacity: 0 }}
-                                        className={`${parseInt(router.query.id) === program.id ? "block" : "hidden"} md:px-[62px] pr-3 w-100p  md:py-[34px] leading-[24px] absolute`}
+                                        className={`${parseInt(router.query.id) === program.id ? "block " : "hidden"} md:px-[62px] pr-3 w-100p  md:py-[34px] leading-[24px] absolute`}
                                     >
                                         {program.component}
                                     </motion.div>

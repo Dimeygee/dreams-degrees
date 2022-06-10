@@ -2,8 +2,15 @@ import '../styles/globals.css'
 import { motion, AnimatePresence  } from "framer-motion"
 import Layout from "../components/layout"
 import ContextWrapper from "../components/context"
+import { useEffect } from 'react'
+
 
 function MyApp({ Component, pageProps, router }) {
+
+    useEffect(() => {
+      window.scrollTo(0,0)
+  },[router.route])
+ 
   return (
     <AnimatePresence>
       <motion.div
