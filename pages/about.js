@@ -39,7 +39,7 @@ export default function About(){
             </section>
             <Impact />
             <Membership />
-            <section className="mb-[124px]">
+            <section className="mb-[124px] mt-[100px] md:mt-0 ">
                 <GetInvolved />
             </section>
         </div>
