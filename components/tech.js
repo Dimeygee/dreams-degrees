@@ -166,7 +166,7 @@ export default function TechnologyProgram(){
                 <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Build networking opportunities.</p>
             </div>
         </article>
-        <article  className="review_slide w-[340px] md:w-[480px] lg:w-[600px] xl:w-[650px]">
+        <article  className="review_slide  md:w-[480px] lg:w-[600px] xl:w-[650px]">
                 <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>Mentees Reviews</h4>
                 <section className="mt-[32px] relative">
                     <Reviews />

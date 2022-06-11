@@ -419,17 +419,7 @@ input[type="checkbox"]:focus {
   
 }
 
-@media screen and (min-width:428px) and  (max-width:540px){
-  .review_slide{
-    width:360px;
-  }
-}
 
-@media screen and (min-width:375px) and  (max-width:414px){
-  .review_slide{
-    width:300px;
-  }
-}
 
 
 

@@ -40,7 +40,7 @@ export default function SessionProgram(){
                     <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Hop on to the #book-a-1:1-session channel to schedule a time with a tech mentor in your tech area of interest.</p>
                 </div>         
             </article>
-            <article  className="review_slide w-[320px] md:w-[480px] lg:w-[600px] xl:w-[650px]">
+            <article  className="review_slide md:w-[480px] lg:w-[600px] xl:w-[650px]">
                 <h4 className='text-[21px] text-[#1A202C] font-[700] mb-[24px]'>Reviews</h4>
                 <section className="mt-[32px] relative">
                     <Reviews />

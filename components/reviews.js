@@ -20,7 +20,7 @@ export default function Reviews(){
              <OwlCarousel autoWidth={true} autoplay={true} loop={true} autoplayTimeout={4000} nav={true}>
              { review_utils.map((review, index) => {
                         return(
-                            <div key={index} className="border-[#E8E9ED] border-[1.5px] w-[320px] md:w-[420px] rounded-[20px] p-[20px] flex justify-center flex-col items-center text-center mr-[16px]">
+                            <div key={index} className="border-[#E8E9ED] border-[1.5px]  w-[320px] md:w-[420px] rounded-[20px] p-[20px] flex justify-center flex-col items-center text-center mr-[16px]">
                                 <div className="w-[88px] h-[88px] rounded-full relative mb-[8px] overflow-hidden">
                                     <Image src={review.image} objectFit="cover" alt={review.name} />
                                 </div>
