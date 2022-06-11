@@ -30,6 +30,11 @@ const variants = {
 
 export default function Home() {
 
+  useEffect(() => {
+    window.scrollTo(0,0)
+},[])
+
+
   return (
     <div>
       <header className='header_container img_box xl:min-h-1/2 relative mb-[102px] md:mb-0  flex flex-col justify-between overflow-hidden'>

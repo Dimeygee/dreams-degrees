@@ -12,6 +12,10 @@ import { useEffect } from 'react'
 
 export default function Contact() {
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
+
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [phonenumber, setPhoneNumber] = useState('')

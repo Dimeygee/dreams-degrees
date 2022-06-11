@@ -8,6 +8,9 @@ import { useEffect } from "react"
 
 export default function About(){
 
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
 
     return (
         <div className="about_bg min-h-[50vh]">
