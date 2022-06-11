@@ -88,7 +88,7 @@ export default function BusinessGrants(){
                             </BButton>
                         </div>
                         <div className="xl:mt-0 xl:ml-5 mt-[24px] xl:grow xl:w-0 w-100p">
-                                <BButton backgroundColor="white" border="2px solid #D68676" padding="15px" color="#D68676" width="100%" involedAs="partrnership/sponsorship">
+                                <BButton backgroundColor="white" border="2px solid #D68676" padding="15px" color="#D68676" width="100%" involedAs="partnership/sponsorship">
                                     <span className="text-16 font-[600]">Become a partner/sponsor</span>
                                     <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#D68676] flex items-center justify-center'>
                                         <div className="relative w-[15px] h-[15px]">

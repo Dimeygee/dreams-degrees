@@ -13,7 +13,7 @@ export default function SpeakerAndPatnerForm({formkey}){
 
     const menucontext = useContext(MenuContext) 
 
-    const { getInvolvedAs } = menucontext
+    const { getInvolvedAs, setIsopenForm ,openForm} = menucontext
 
     const [Fullname, setFullname] = useState("")
     const [Email, setEmail] = useState("")
@@ -27,7 +27,16 @@ export default function SpeakerAndPatnerForm({formkey}){
 
     return (
         <FormContainer handleSubmit={handleSubmit} state={state}>
-            <FormHeader />
+            <div className='flex justify-between mb-10 items-center'>
+                <div className="text-[28px] uppercase font-paytone text-pry md:flex">
+                    <p>Partnership/</p>
+                    <p>Sponsorship</p>
+                </div>
+                <div className='w-[40px] h-[40px] 4xl:w-[110px] 4xl:h-[110px] 3xl:w-[60px] 3xl:h-[60px] rounded-full flex justify-center items-center flex-col cursor-pointer' onClick={() => setIsopenForm(!openForm)}>
+                <div className='border-[1px] border-[#000] w-[14px] rotate-45 4xl:w-[44px] 3xl:w-[25px]'></div>
+                    <div className='border-[1px] border-[#000] w-[14px] -rotate-45 -translate-y-[2px] 4xl:w-[44px] 4xl:-translate-y-[6px] 3xl:w-[25px]'></div>
+            </div>
+            </div>
             <div className="text-18 mb-10">We are passionate about diversity and inclusion and are on the search to connect with individuals, brands and Organisations who are equally passionate about diversity and inclusion. fill out the form below and tell us about your organisation. We'll then contact you to organise a time to chat more.</div>
             <TextInput type="text" value={Fullname} change={setFullname} name="Full Name" />
             <TextInput type="email" value={Email} change={setEmail} name="Email" />
