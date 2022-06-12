@@ -15,9 +15,7 @@ export default function CommunityFormComponent(){
     const [EmailAddress, setEmailAddress] = useState("")
 
     const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_JOIN_THE_COMMUNITY);
-
-    console.log(state)
-
+    
     return(
         <FormContainer  handleSubmit={handleSubmit}>
             <FormHeader />
