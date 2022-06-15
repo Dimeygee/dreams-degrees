@@ -22,7 +22,7 @@ export default function Volunteer(){
 
     const options =  [ "Business", "Natural sciences", "History", "Arts", "Engineering", "Languages", "IT", "Other" ]
 
-    const options2 = ["Social media manager", "Graphics designer", "Content creator", "Community manager", "Tech mentorship coordinator"]
+    const options2 = ["Social media manager", "Graphics designer", "Content creator", "Community manager", "Tech mentorship coordinator", "Programs manager"]
 
     return (
         <FormContainer  handleSubmit={handleSubmit}>
@@ -34,7 +34,7 @@ export default function Volunteer(){
             <TextInput type="text" value={InstagramHandle} change={setInstagramHandle} name="Instagram Handle"  />
             <SelectInput type="text" value={accademyBackground} change={setAccademyBackground} name="Accademy background"  options={options} placeholder="Accademy background" />
             <SelectInput type="text" value={volunteerRole} change={setVolunteerRole} name="Which of the following volunteer roles most interests you?"  options={options2}   />
-            <TextArea type="text" value={aboutYou} change={setAboutYou} name="tell us a bit about yourself and why you have chosen the  role?"  />
+            <TextArea type="text" value={aboutYou} change={setAboutYou} name="Tell us a bit about yourself and why you have chosen the  role?"  />
             <TextArea type="text" value={reason} change={setReason} name="Why would you love to volunteer with Dreams&Degrees?"  />
             <FormButton   state={state}  />
         </FormContainer>

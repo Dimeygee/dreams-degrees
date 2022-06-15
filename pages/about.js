@@ -33,7 +33,7 @@ export default function About(){
                 <link rel="icon" href="/images/favicon.png" />
                 <link rel="preload" as="image" href="/images/lines1.png" />
             </Head>
-            <section  className="pt-[113px] md:pt-[180px]">
+            <section  className="pt-[113px] md:pt-[100px]">
             <article className="md:px-6 xl:px-0 xl:container mx-auto flex-col-reverse flex md:flex-row items-center mb-[124px] md:mb-0">
                 <div className="w-100p md:w-50p h-[363px] md:h-[622px] relative">
                     <Image src={ladiesgroup} alt="ladiesgroup" layout="fill" objectFit="contain" priority quality={90} />
@@ -48,7 +48,7 @@ export default function About(){
                         We are leveraging digital technologies in building a female-focused community with members that thrive daily towards becoming the best version of themselves whilst making a difference in their world.
                         </p>
                         <br />
-                        <p className="text-para2 text-18 text-center md:text-left px-[20px] md:px-0">While most of our initiatives are geared towards supporting females in technology and female entrepreneurs, our goal at Dreams & Degrees is to provide opportunities that would enable success for all women.</p>
+                        <p className="text-para2 text-18 text-center md:text-left px-[20px] md:px-0">While most of our initiatives are geared towards supporting females in technology and  entrepreneurship, our goal at Dreams & Degrees is to provide opportunities that would enable success for all women.</p>
                    </div>
                 </div>
             </article>

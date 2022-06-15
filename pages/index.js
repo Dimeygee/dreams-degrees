@@ -60,7 +60,7 @@ export default function Home() {
       </Head>
 
       <section className="w-[100%] h-[20px]"></section>
-      <section className="text-center pt-[113px] md:pt-[180px] grow flex flex-col justify-between">
+      <section className="text-center pt-[113px] md:pt-[130px] grow flex flex-col justify-between">
           <motion.h1 
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}

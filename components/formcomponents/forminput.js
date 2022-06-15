@@ -43,7 +43,7 @@ export const RadioboxInput = ({ name,value, change, options }) => (
     <div className="form-control">
         {options.map((option, index) => {
             return(
-                    <label className="radio">
+                    <label className="radio" ley={index}>
                         <input key={index} type="radio" name={name} value={option} onChange={e => change(e.target.value)} required/>
                         <span>{option}</span>
                     </label>

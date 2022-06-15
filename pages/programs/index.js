@@ -14,7 +14,7 @@ export default function P_side(){
                         <h1 className="text-42 md:text-56 text-[#343232] font-[700] md:text-left text-center leading-[61px] mb-[64px] font-paytone">Our <br className="hidden md:block" /> <span className='text-pry'>programs</span></h1>
                         {programsUtils.map((program, index) => {
                             return (
-                                <Link href="/programs/[id]" as={`/programs/${program.id}`} key={index}>
+                                <Link href="/programs/[id]" as={`/programs/${program.id}`} key={program.id}>
                                     <a >
                                         <div  className={`${parseInt(router.query.id) === program.id ? "bg-[#E7E5EA]  border-[0.682471px] border-[#D68676]" : "transparent"} font-fellix mb-[16.3px] hover:bg-[#E7E5EA] border-[#E7E5EA] transition duration-100 cursor-pointer flex items-center rounded-[21.8391px] p-[22px] hover:border-[#D68676] border-[0.682471px]`}>
                                             <div className="relative w-[22px] h-[22px] mr-[18px]">

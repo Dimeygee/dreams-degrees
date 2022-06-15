@@ -15,6 +15,10 @@ export default function NavLayout() {
     const {open, isOpen } = menucontext
 
 
+    const handleClick = () => {
+        router.reload()
+    }
+
 
     return (
         <div className={`${router.asPath !== "/" ? " md:bg-[#ffff]" : "transparent" } absolute w-100p z-10`}>
@@ -22,12 +26,17 @@ export default function NavLayout() {
                 <link  rel="icon" href="/images/logo.png" />
             </Head>
            <div className='px-6  xl:container  mx-auto xl:px-5 py-7 flex justify-between items-center font-fellix'>
-                <Link href="/">
-                    <a>
-                        <div className='logo_bg w-[150px] h-[40px] xl:w-[175px] md:h-[50px]  xl:h-50  relative'>
-                        </div>
-                    </a>
-                </Link>
+                {router.asPath === "/" ? (
+                    <div onClick={handleClick} className='logo_bg w-[150px] h-[40px] xl:w-[175px] md:h-[50px]  xl:h-50  relative'>
+                    </div>
+                ) : (
+                    <Link href="/">
+                                <a>
+                                    <div className='logo_bg w-[150px] h-[40px] xl:w-[175px] md:h-[50px]  xl:h-50  relative'>
+                                    </div>
+                                </a>
+                    </Link>
+                )}
                 <div className="text-bk xl:ml-20 hidden md:flex justify-center">
                     <ul className="md:flex justify-between  w-[300px]">
                         <li>

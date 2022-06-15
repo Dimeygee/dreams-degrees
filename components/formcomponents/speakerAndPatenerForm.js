@@ -27,7 +27,10 @@ export default function SpeakerAndPatnerForm({formkey}){
 
     return (
         <FormContainer handleSubmit={handleSubmit} state={state}>
-            <div className='flex justify-between mb-10 items-center'>
+            { getInvolvedAs === "speaker" ? (
+                <FormHeader  />
+            ) : (
+                <div className='flex justify-between mb-10 items-center'>
                 <div className="text-[28px] uppercase font-paytone text-pry md:flex">
                     <p>Partnership/</p>
                     <p>Sponsorship</p>
@@ -37,7 +40,8 @@ export default function SpeakerAndPatnerForm({formkey}){
                     <div className='border-[1px] border-[#000] w-[14px] -rotate-45 -translate-y-[2px] 4xl:w-[44px] 4xl:-translate-y-[6px] 3xl:w-[25px]'></div>
             </div>
             </div>
-            <div className="text-18 mb-10">We are passionate about diversity and inclusion and are on the search to connect with individuals, brands and Organisations who are equally passionate about diversity and inclusion. fill out the form below and tell us about your organisation. We'll then contact you to organise a time to chat more.</div>
+            ) }
+            <div className="text-18 mb-10">We are passionate about diversity and inclusion and are on the search to connect with individuals, brands and Organisations who are equally passionate about diversity and inclusion. Fill out the form below and tell us about your organisation. We'll then contact you to organise a time to chat more.</div>
             <TextInput type="text" value={Fullname} change={setFullname} name="Full Name" />
             <TextInput type="email" value={Email} change={setEmail} name="Email" />
             <TextInput type="text" value={CompanyWebsite} change={setCompanyWebsite} name="Company Website" />

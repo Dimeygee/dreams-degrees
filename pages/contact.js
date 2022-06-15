@@ -71,7 +71,7 @@ export default function Contact() {
                         <Image src={cm} alt="cm" layout='fill' quality={100}   />
                     </div>
                     <p className='text-18 mt-[31px] mb-[8px] text-bk block font-[700]'>Send a mail</p>
-                    <p className='block text-[#594D6D] text-18 font-[400]'>hello@dreamsanddegrees.com</p>
+                    <p className='block text-[#594D6D] text-18 font-[400]'>hello@dreamsandegrees.com</p>
                 </div>
                 <div className='flex flex-col items-center mt-[76px] mb-[68px] md:mt-0 md:mb-0'>
                     <div className='relative w-[40px] h-[40px] '> 

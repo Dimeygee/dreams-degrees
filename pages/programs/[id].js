@@ -47,7 +47,7 @@ export default function Programs(){
                 <div className="program_content md:mt-0 mt-[75px] w-[100%] md:border-t-none md:border-l-[0.5px] h-[930px] md:h-[988px]  border-[#A0AEC0] relative font-fellix" ref={refSection}>
                         { Program.map(program => {
                             return (
-                                <div >
+                                <div key={program.id}>
                                     <AnimatePresence>
                                     <motion.div
                                         key={parseInt(router.query.id)}

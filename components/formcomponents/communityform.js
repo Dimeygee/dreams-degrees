@@ -20,7 +20,6 @@ export default function CommunityFormComponent(){
         <FormContainer  handleSubmit={handleSubmit}>
             <FormHeader />
             <div className="text-18">
-                Dreams&Degrees Community Sign Up.
                 We leverage Digital technologies to connect, educate and empower African females passionate about technology and entrepreneurship.
 
                 Get to connect with females on the same technology and/or entrepreneurial journey as you. Request access to our exclusive Slack Community!
