@@ -73,9 +73,9 @@ export default function GetInvolvedForms(){
             { getInvolvedAs === "mentorship" && <MentorForm /> }
             { getInvolvedAs === "partnership/sponsorship" && <PatnerOrSponsorForm /> }
             { getInvolvedAs === "internship waitlist" && <InternForm /> }
-            { getInvolvedAs === "Technology mentoship program" &&  <TechnologyMentorShipProgram /> }
+            { getInvolvedAs === "Technology mentorship program" &&  <TechnologyMentorShipProgram /> }
             { getInvolvedAs === "join the community" && <CommunityForm /> }
-            { getInvolvedAs === "Accountability Partner" && <AccountabilityBuddyForm  /> }
+            { getInvolvedAs === "Accountability Buddy" && <AccountabilityBuddyForm  /> }
             { getInvolvedAs === "Volunteer" && <VolunteerForm /> }
         </>
     )

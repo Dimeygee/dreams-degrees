@@ -38,7 +38,7 @@ export const programsUtils = [
     { 
         "id": 2,
         "image" : profile,
-        "text" : "Accountability Partner in Technology"
+        "text" : "Accountability Buddy in Technology"
     },
     { 
         "id": 3,
