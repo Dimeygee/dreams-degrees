@@ -25,7 +25,6 @@ export default function AccountabilityFormComponent({formkey}){
         <FormContainer  handleSubmit={handleSubmit}>
             <FormHeader />
             <div className="text-18">
-                <p>Dreams&Degrees Accountability Buddy Application Form (Technology).</p>
                 <p> Find an Accountability Buddy (FAB-March Cohort)  application is open to individuals looking to improve their tech skills whilst staying motivated in their technology journey this year. The aim is to connect you with an accountability partner with same tech goals and interests. </p>
             </div>
             <TextInput type="text" value={Firstname} change={setFirstname} name="First Name"  />

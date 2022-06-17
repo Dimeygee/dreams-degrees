@@ -2,7 +2,7 @@ import { Caret } from "../icons/icons"
 
 export const TextInput = ({ type, value, name, change, placeholder=null }) => (
     <div className="form-control">
-            <label>{name}:</label>
+            <label>{name}</label>
             <input 
                 type={type} 
                 value={value} 
@@ -18,7 +18,7 @@ export const TextInput = ({ type, value, name, change, placeholder=null }) => (
 export const SelectInput = ({ name,value, change , options, placeholder}) => (
 
     <div className="form-control">
-        <label>{name}:</label>
+        <label>{name}</label>
         <select required name={name} value={value} defaultValue="" onChange={(e) => change(e.target.value)} className="text-[13px]">
             <option value="" disabled selected ></option>
             { options.map((option, index) => {
@@ -34,7 +34,7 @@ export const SelectInput = ({ name,value, change , options, placeholder}) => (
 
 export const TextArea = ({ name, value, change }) => (
     <div className="form-control">
-        <label>{name}:</label>
+        <label>{name}</label>
         <textarea row="6" value={value} name={name} onChange={(e) => change(e.target.value)} required></textarea>
     </div>
 )
@@ -54,7 +54,7 @@ export const RadioboxInput = ({ name,value, change, options }) => (
 
 export const CheckboxInput = ({name} ) => (
     <div className="form-control checkbox">
-        <label>{name}:</label>
+        <label>{name}</label>
         <input type="checkbox"  required/>
     </div>
 )

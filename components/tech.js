@@ -37,7 +37,7 @@ export default function TechnologyProgram(){
                 </div>
                 <div className="flex  mb-[16px]">
                 <span className="bg-[#F9EEEB] text-pry text-14 font-[700]  relative w-[40px] h-[40px] rounded-full justify-center flex items-center">2</span>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Mentees are given access to D&D skill up, a structure that includes 3 months of technical training, workshops and 3 months of business workshops, financial management literacy, soft skills & build season [ where mentees work on projects that reflect their current skill upgrade]</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Mentees are given access to D&D skill up, a structure that includes 3 months of technical training, workshops, soft skills & build season [ where mentees work on projects that reflect their current skill upgrade].</p>
             
                 </div>
                 <div className="flex mb-[16px]">
@@ -54,7 +54,15 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Personalized check-in sessions with Mentors.</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Provision of personalized check-in sessions with mentors.</p>
+            </div>  
+            <div className="flex  mb-[16px]">
+                <div className="w-[35px] h-[35px] flex items-center justify-center">
+                    <div className="relative w-[15px] h-[15px]">
+                        <Image src={star} alt="star" layout="fill" quality={100}  priority />
+                    </div>
+                </div>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To increase and improve opportunities and outcomes for women in technology.</p>
             </div>  
             <div className="flex items-center mb-[16px]">
                 <div className="w-[35px] h-[35px] flex items-center justify-center">
@@ -62,23 +70,15 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To increase and improve opportunities and outcomes for women in technology</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To foster self-confidence amongst women in technology.</p>
             </div>  
-            <div className="flex items-center mb-[16px]">
-                <div className="w-[35px] h-[35px] flex items-center justify-center">
+            <div className="flex mb-[16px]">
+                <div className="w-[35px] h-[35px] flex  justify-center">
                     <div className="relative w-[15px] h-[15px]">
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To foster self-confidence amongst women in technology</p>
-            </div>  
-            <div className="flex items-center mb-[16px]">
-                <div className="w-[35px] h-[35px] flex items-center justify-center">
-                    <div className="relative w-[15px] h-[15px]">
-                        <Image src={star} alt="star" layout="fill" quality={100}  priority />
-                    </div>
-                </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interestTo empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interest</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interest to empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interest.</p>
             </div>
         </article>
         <article className="mb-[32px]">
@@ -98,7 +98,7 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Serves as a Medium through which contribution can be made to the IT industry </p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Serves as a Medium through which contribution can be made to the IT industry .</p>
             </div>  
             <div className="flex items-center mb-[16px]">
                 <div className="w-[35px] h-[35px] flex items-center justify-center">
@@ -155,7 +155,7 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Professional growth and career planning</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Professional growth and career planning.</p>
             </div>
             <div className="flex items-center mb-[16px]">
                 <div className="w-[35px] h-[35px] flex items-center justify-center">
@@ -171,7 +171,6 @@ export default function TechnologyProgram(){
                 <section className="mt-[32px] relative">
                     <Reviews />
                 </section>
-                
         </article>
     </div>
     )

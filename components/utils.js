@@ -138,14 +138,14 @@ export const programs = [
      { 
         id: 2,
         image: apt,
-        head:"Accountability Partner in Technology",
-        text:"Our accountability partner program aims to match interested community members with ambitious, intentional and like-minded individual(s) in technology that would help you stay committed to your goals."
+        head:"Accountability Buddy in Technology",
+        text:"Our accountability buddy program aims to match interested community members with ambitious, intentional and like-minded individual(s) in technology that would help them stay committed to your goals."
      },
      { 
         id: 3,
         image: ddbg,
         head:"D&D Business Grant (Coming Soon)",
-        text:"Our small business grants are designed for female entrepreneurs in Africa. The grant would be open to for-profit businesses that are one to three years old and woman led. In addition to the grant, grant winners also get to be featured on our website, newsletter and social media platforms."
+        text:"Our small business grants are designed for female entrepreneurs in Africa. The grant would be open to for-profit businesses that are one to three years old and woman-led. In addition to the grant, grant winners also get to be featured on our website, newsletter and social media platforms."
      },
      { 
         id: 4,

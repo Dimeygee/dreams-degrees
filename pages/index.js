@@ -30,10 +30,6 @@ const variants = {
 
 export default function Home() {
 
-  useEffect(() => {
-    window.scrollTo(0,0)
-},[])
-
 
   return (
     <div>
@@ -107,7 +103,7 @@ export default function Home() {
         <Impact />
         <Membership />
         <Programs />
-        <section className="mb-[224px]">
+        <section className="mb-[124px]">
           <GetInvolved />
         </section>
       </main>

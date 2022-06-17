@@ -6,10 +6,10 @@ import { useEffect } from 'react'
 
 
 function MyApp({ Component, pageProps, router }) {
-/*
+
     useEffect(() => {
       window.scrollTo(0,0)
-  },[router.route])*/
+  },[router.route])
  
   return (
     <AnimatePresence>

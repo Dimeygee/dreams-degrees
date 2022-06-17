@@ -11,7 +11,7 @@ export default function IntershipProgram(){
                 <p className='text-para2 text-18 font-[400] leading-[24px]'>Dreams & Degrees is currently working to introduce a program that offers females interested in technology the opportunity to gain real world experience, invaluable training as well as confidence and network building by partnering with industry leaders to place young females directly into the workforce as interns. 
                 Interested in becoming an intern? </p>
                 <div className="w-[230px] mt-[24px]">
-                    <BButton width="100%" backgroundColor="#D68676" padding="15px 0" color="white" fontSize="16px" involedAs="internship">
+                    <BButton width="100%" backgroundColor="#D68676" padding="15px 0" color="white" fontSize="16px" involedAs="internship waitlist">
                             <span>Join our waitlist</span>
                             <div className='ml-[10px] w-[22px] h-[22px] rounded-full bg-[#ffff] flex items-center justify-center'>
                                         <div className="relative w-[10px] h-[10px]">

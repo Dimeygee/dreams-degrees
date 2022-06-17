@@ -127,6 +127,11 @@ body {
   border:0 0 2px 0;
 }
 
+button{
+  outline:none;
+  border:none;
+}
+
 #mc_embed_signup{
   background:#fff; 
   clear:left; 

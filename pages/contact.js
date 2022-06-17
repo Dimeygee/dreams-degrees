@@ -7,14 +7,11 @@ import GetInvolved from '../components/getinvolved'
 import { useForm } from '@formspree/react';
 import { useState } from 'react'
 import { Loader } from '../components/formcomponents/loader'
-import { useEffect } from 'react'
+import f_insta from "../public/images/f_insta.png"
+import f_twt from "../public/images/f_twt.png"
 
 
 export default function Contact() {
-
-    useEffect(() => {
-        window.scrollTo(0,0)
-    },[])
 
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -71,14 +68,14 @@ export default function Contact() {
                         <Image src={cm} alt="cm" layout='fill' quality={100}   />
                     </div>
                     <p className='text-18 mt-[31px] mb-[8px] text-bk block font-[700]'>Send a mail</p>
-                    <p className='block text-[#594D6D] text-18 font-[400]'>hello@dreamsandegrees.com</p>
+                    <p className='block text-[#594D6D] text-18 font-[400]'><a href= "mailto:hello@dreamsandegrees.com">hello@dreamsandegrees.com</a></p>
                 </div>
                 <div className='flex flex-col items-center mt-[76px] mb-[68px] md:mt-0 md:mb-0'>
                     <div className='relative w-[40px] h-[40px] '> 
                         <Image src={cc} alt="cc" layout='fill' quality={100}   />
                     </div>
                     <p className='text-18 mt-[31px] mb-[8px] text-bk block font-[700]'>Call us</p>
-                    <p className='block text-[#594D6D] text-18 font-[400]'>+61473839657</p>
+                    <p className='block text-[#594D6D] text-18 font-[400]'><a href="tel:+61473839657">+61473839657</a></p>
                 </div>
                 <div className='flex flex-col items-center'>
                     <div className='relative w-[40px] h-[40px] '> 
@@ -86,6 +83,14 @@ export default function Contact() {
                     </div>
                     <p className='text-18 mt-[31px] mb-[8px] text-bk block font-[700]'>Follow us on Twitter and Instagram</p>
                     <p className='block text-[#594D6D] text-18 font-[400]'>@dreamsandegrees</p>
+                    <div className="flex mt-5">
+                        <div className="w-[24px] h-[20px] relative mr-4">
+                            <a href="https://twitter.com/dreamsandegrees" target="_blank"><Image src={f_twt} alt="f_twt" layout="fill" quality={100} objectFit="contain"  /></a>
+                        </div>
+                        <div className="w-[24px] h-[20px] relative">
+                            <a href="https://instagram.com/dreamsandegrees" target="_blank"><Image src={f_insta} alt="f_insta"  layout="fill" quality={100} objectFit="contain"  /></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
