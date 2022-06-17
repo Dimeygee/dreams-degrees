@@ -52,7 +52,7 @@ export default function Contact() {
                         <input type='email' name="email"  placeholder='Your email' className='p-[15px] bg-fm rounded-[28px]'  value={email} onChange={e => setEmail(e.target.value)} required/>
                     </label>
                     <label className='mb-[30px] block mx-auto'>
-                        <input type='tel' name="phone number"  placeholder='Your phone number' className='p-[15px] bg-fm rounded-[28px]'  value={phonenumber} onChange={e => setPhoneNumber(e.target.value)} pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}"  required />
+                        <input type='tel' name="phone number"  placeholder='Your phone number' className='p-[15px] bg-fm rounded-[28px]'  value={phonenumber} onChange={e => setPhoneNumber(e.target.value)} required />
                     </label>
                     <label className='mb-[30px] block mx-auto'>
                         <textarea type='text' name="message"  placeholder='Your message' className='textarea h-[240px] p-[15px] bg-fm rounded-[28px]' value={message} onChange={e => setMessage(e.target.value)} required ></textarea>
