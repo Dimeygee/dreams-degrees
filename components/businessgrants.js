@@ -74,7 +74,7 @@ export default function BusinessGrants(){
                     </p>
                 </div>
                 <div className="mt-[29px]">
-                    <p className="work_para text-para2 text-18 font-[400] leading-[24px]">Keep your eye open for all the details in this section of the website, join our community by subscribing to our mailing list, or follow us on social media and we will keep you posted about dates and venues.
+                    <p className="work_para text-para2 text-18 font-[400] leading-[24px]">Keep your eye open for all the details in this section of the website and our social media pages.
                     </p>
                     <div className="mt-[32px] flex xl:flex-row flex-col">
                         <div className="md:w-[100%] xl:w-[40%] xl:mb-0 mb-3">

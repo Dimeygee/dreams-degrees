@@ -157,6 +157,6 @@ export const programs = [
         id: 5,
         image: events,
         head:"D&D Events",
-        text:"We organize virtual hangouts, twitter space discussions, workshops, and webinars for females to connect, learn and grow in a safe virtual or physical environment.  keep an eye out for more details on our social media platforms"
+        text:"We organize virtual hangouts, twitter space discussions, workshops, and webinars for females to connect, learn and grow in a safe virtual or physical environment.  Keep an eye out for more details on our social media platforms"
      },
 ]

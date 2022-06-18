@@ -13,7 +13,7 @@ export default function Volunteer(){
     const [Firstname, setFirstname] = useState("")
     const [Lastname, setLastname] = useState("")
     const [phoneNumber, setPhoneNumber] = useState("")
-    const [InstagramHandle, setInstagramHandle] = useState("")
+    const [twitterHandle, setTwitterHandle] = useState("")
     const [accademyBackground, setAccademyBackground] = useState("")
     const [EmailAddress, setEmailAddress] = useState("")
     const [volunteerRole, setVolunteerRole] = useState("")
@@ -31,7 +31,7 @@ export default function Volunteer(){
             <TextInput type="text" value={Lastname} change={setLastname} name="Last Name"  />
             <TextInput type="email" value={EmailAddress} change={setEmailAddress} name="Email address"  />
             <TextInput type="tel" value={phoneNumber} change={setPhoneNumber} name="Phone number"  />
-            <TextInput type="text" value={InstagramHandle} change={setInstagramHandle} name="Instagram Handle"  />
+            <TextInput type="text" value={twitterHandle} change={setTwitterHandle} name="Twitter Handle"  />
             <SelectInput type="text" value={accademyBackground} change={setAccademyBackground} name="Accademy background"  options={options} placeholder="Accademy background" />
             <SelectInput type="text" value={volunteerRole} change={setVolunteerRole} name="Which of the following volunteer roles most interests you?"  options={options2}   />
             <TextArea type="text" value={aboutYou} change={setAboutYou} name="Tell us a bit about yourself and why you have chosen the  role?"  />

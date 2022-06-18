@@ -30,7 +30,7 @@ export default function SpeakerAndPatnerForm({formkey}){
             { getInvolvedAs === "speaker" ? (
                 <FormHeader  />
             ) : (
-                <div className='flex justify-between mb-10 items-center'>
+                <div className='flex justify-between mb-10 items-center sticky top-0 z-[2] bg-[#fff]'>
                 <div className="text-[28px] uppercase font-paytone text-pry md:flex">
                     <p>Partnership/</p>
                     <p>Sponsorship</p>
