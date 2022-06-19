@@ -27,7 +27,7 @@ export default function Impact(){
                         <Image src={ent} alt="ent" layout="fill" quality={90} />
                     </div>  
                     <b className="my-4 block text-21">Entrepreneurship</b> 
-                    <p className="xl:w-[413px] text-para2 text-18">Increase access to funds and investment opportunities for female founders/ entrepreneurs through provision of Business grants to entrepreneurs.</p>
+                    <p className="xl:w-[413px] text-para2 text-18">Increase access to funds and investment opportunities for female founders/ entrepreneurs through provision of business grants.</p>
                 </div> 
             </article> 
             <article 

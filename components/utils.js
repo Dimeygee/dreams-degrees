@@ -126,7 +126,7 @@ export const programs = [
         id: 0,
         image: mbutton,
         head:"Technology Mentorship Program",
-        text:"This is a technology mentoring program which aims to provide vibrant and ambitious young women in the information technology industry or women wanting to transition into the field of IT with adequate access."
+        text:"This is a technology mentoring program for ambitious young women looking to kick start their careers in Technology."
      },
      { 
         id: 1,
@@ -139,7 +139,7 @@ export const programs = [
         id: 2,
         image: apt,
         head:"Accountability Buddy in Technology",
-        text:"Our accountability buddy program aims to match interested community members with ambitious, intentional and like-minded individual(s) in technology that would help them stay committed to your goals."
+        text:"Our accountability buddy program aims to match interested community members with ambitious, intentional and like-minded individual(s) in technology that would help them stay committed to their goals."
      },
      { 
         id: 3,
@@ -157,6 +157,6 @@ export const programs = [
         id: 5,
         image: events,
         head:"D&D Events",
-        text:"We organize virtual hangouts, twitter space discussions, workshops, and webinars for females to connect, learn and grow in a safe virtual or physical environment.  Keep an eye out for more details on our social media platforms"
+        text:"We organize virtual hangouts, twitter space discussions, workshops, and webinars for females to connect, learn and grow in a safe virtual or physical environment.  Keep an eye out for more details on our social media platforms."
      },
 ]

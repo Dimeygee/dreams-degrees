@@ -22,7 +22,7 @@ export default function Volunteer(){
 
     const options =  [ "Business", "Natural sciences", "History", "Arts", "Engineering", "Languages", "IT", "Other" ]
 
-    const options2 = ["Social media manager", "Graphics designer", "Content creator", "Community manager", "Tech mentorship coordinator", "Programs manager"]
+    const options2 = ["Social media manager", "Graphics designer", "Content creator", "Community manager", "Tech mentorship coordinator", "Programs manager", "Editorial team", "Partnership manager"]
 
     return (
         <FormContainer  handleSubmit={handleSubmit}>

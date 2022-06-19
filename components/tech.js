@@ -54,7 +54,7 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Provision of personalized check-in sessions with mentors.</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Provide personalized check-in sessions with mentors.</p>
             </div>  
             <div className="flex  mb-[16px]">
                 <div className="w-[35px] h-[35px] flex items-center justify-center">
@@ -62,7 +62,7 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To increase and improve opportunities and outcomes for women in technology.</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Increase and improve opportunities and outcomes for women in technology.</p>
             </div>  
             <div className="flex items-center mb-[16px]">
                 <div className="w-[35px] h-[35px] flex items-center justify-center">
@@ -70,7 +70,7 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To foster self-confidence amongst women in technology.</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Foster self-confidence amongst women in technology.</p>
             </div>  
             <div className="flex mb-[16px]">
                 <div className="w-[35px] h-[35px] flex  justify-center">
@@ -78,7 +78,7 @@ export default function TechnologyProgram(){
                         <Image src={star} alt="star" layout="fill" quality={100}  priority />
                     </div>
                 </div>
-                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>To empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interest to empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interest.</p>
+                <p className='work_para ml-[16px] text-para2 text-18 font-[400] leading-[24px]'>Empower IT undergraduate and young women in the industry, giving them a clearer pathway to their field of interest.</p>
             </div>
         </article>
         <article className="mb-[32px]">

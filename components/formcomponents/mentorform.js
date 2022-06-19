@@ -25,6 +25,8 @@ export default function MentorFormComponent({formkey}){
 
     const options = ["Front end dev", "Back-end dev","Mobile dev", "UI/UX design", "Data analytics", "Cyber Security","Technical writer"]
 
+    const gender = ["Female", "Male"]
+
     return(
         <FormContainer  handleSubmit={handleSubmit}>
             <FormHeader />
@@ -33,7 +35,7 @@ export default function MentorFormComponent({formkey}){
             <TextInput type="email" value={EmailAddress} change={setEmailAddress} name="Email address"  />
             <TextInput type="text" value={Country} change={setCountry} name="Country of residence"  />
             <TextInput type="text" value={twitterHandle} change={setTwitterHandle} name="Twitter Handle"  />
-            <TextInput type="text" value={Gender} change={setGender} name="Gender"  />
+            <SelectInput type="text" value={Gender} change={setGender} name="Gender" options={gender}   />
             <SelectInput  value={TechAreaOfInterest}  change={setTechAreaOfInterest} name="Tech area of interest" placeholder="Tech area of interest" options={options}  />
             <TextInput type="text" value={LinkedinProfile} change={setLinkedinProfile} name="LinkedIn profile "  />
             <TextInput type="text" value={whyDoYouWantToBecomeAMentor} change={setwhyDoYouWantToBecomeAMentor} name="Why do you want to become a mentor?"  />
